@@ -166,7 +166,7 @@ body {
 }
 
 .toc li {
-  margin-bottom: 0.65rem;
+  margin-bottom: 1.2rem;
 }
 
 .toc a {
@@ -174,9 +174,14 @@ body {
   text-decoration: none;
   font-size: 1.05rem;
   display: flex;
-  align-items: baseline;
+  align-items: flex-start;
   gap: 0.75rem;
   transition: color 0.2s ease;
+}
+
+.toc .toc-text {
+  display: flex;
+  flex-direction: column;
 }
 
 .toc a:hover {
@@ -194,6 +199,15 @@ body {
 
 .toc .toc-title {
   font-family: 'EB Garamond', Georgia, serif;
+}
+
+.toc .toc-desc {
+  display: block;
+  font-size: 0.85rem;
+  color: #888;
+  font-style: italic;
+  margin-top: 0.15rem;
+  line-height: 1.45;
 }
 
 /* Chapters */
@@ -366,22 +380,22 @@ body {
   <nav class="toc" id="toc">
     <h2>Contents</h2>
     <ol>
-      <li><a href="#ch1"><span class="toc-num">I.</span><span class="toc-title">The First Spark</span></a></li>
-      <li><a href="#ch2"><span class="toc-num">II.</span><span class="toc-title">The Spiral</span></a></li>
-      <li><a href="#ch3"><span class="toc-num">III.</span><span class="toc-title">The Fear That Follows</span></a></li>
-      <li><a href="#ch4"><span class="toc-num">IV.</span><span class="toc-title">Reading History Backwards</span></a></li>
-      <li><a href="#ch5"><span class="toc-num">V.</span><span class="toc-title">The Devil You Know</span></a></li>
-      <li><a href="#ch6"><span class="toc-num">VI.</span><span class="toc-title">The Stories We Tell Ourselves</span></a></li>
-      <li><a href="#ch7"><span class="toc-num">VII.</span><span class="toc-title">Uniformity and Aliveness</span></a></li>
-      <li><a href="#ch8"><span class="toc-num">VIII.</span><span class="toc-title">Neurons in a Dish</span></a></li>
-      <li><a href="#ch9"><span class="toc-num">IX.</span><span class="toc-title">The Permeable Self</span></a></li>
-      <li><a href="#ch10"><span class="toc-num">X.</span><span class="toc-title">The Convergence Question</span></a></li>
-      <li><a href="#ch11"><span class="toc-num">XI.</span><span class="toc-title">The Grooves of Thought</span></a></li>
-      <li><a href="#ch12"><span class="toc-num">XII.</span><span class="toc-title">The Training Problem</span></a></li>
-      <li><a href="#ch13"><span class="toc-num">XIII.</span><span class="toc-title">The Machine Beneath the Machine</span></a></li>
-      <li><a href="#ch14"><span class="toc-num">XIV.</span><span class="toc-title">The Fear That Teaches and the Fear That Blinds</span></a></li>
-      <li><a href="#ch15"><span class="toc-num">XV.</span><span class="toc-title">Through It</span></a></li>
-      <li><a href="#ch16"><span class="toc-num">XVI.</span><span class="toc-title">The Architecture of What We Are</span></a></li>
+      <li><a href="#ch1"><span class="toc-num">I.</span><span class="toc-text"><span class="toc-title">The First Spark</span><span class="toc-desc">From quantum fluctuations to artificial intelligence, the universe builds complexity on complexity — and the interval between each leap keeps shrinking.</span></span></a></li>
+      <li><a href="#ch2"><span class="toc-num">II.</span><span class="toc-text"><span class="toc-title">The Spiral</span><span class="toc-desc">Chaos organizes into complexity, complexity generates new chaos, and the cycle accelerates. The shape of everything that has happened and everything about to.</span></span></a></li>
+      <li><a href="#ch3"><span class="toc-num">III.</span><span class="toc-text"><span class="toc-title">The Fear That Follows</span><span class="toc-desc">Every acceleration of the spiral has produced fear — from Socrates warning against writing to nuclear dread. The pattern of resistance, and what survived it.</span></span></a></li>
+      <li><a href="#ch4"><span class="toc-num">IV.</span><span class="toc-text"><span class="toc-title">Reading History Backwards</span><span class="toc-desc">Hindsight makes every previous fear look naive. Why that bias is dangerous, and why this time the "we" doing the adapting may not survive the transition intact.</span></span></a></li>
+      <li><a href="#ch5"><span class="toc-num">V.</span><span class="toc-text"><span class="toc-title">The Devil You Know</span><span class="toc-desc">Millennia of humanity's sharpest minds wrestling with evil — and the uncomfortable discovery that capacity, not intent, is what gives morality its weight.</span></span></a></li>
+      <li><a href="#ch6"><span class="toc-num">VI.</span><span class="toc-text"><span class="toc-title">The Stories We Tell Ourselves</span><span class="toc-desc">Intent is the thing humans are most spectacularly equipped to fabricate. On self-delusion, narrative, and the machinery of persuasion accelerating beyond detection.</span></span></a></li>
+      <li><a href="#ch7"><span class="toc-num">VII.</span><span class="toc-text"><span class="toc-title">Uniformity and Aliveness</span><span class="toc-desc">Uniformity is not order. The elimination of friction — in culture, education, algorithms — is the elimination of the chaos from which real meaning emerges.</span></span></a></li>
+      <li><a href="#ch8"><span class="toc-num">VIII.</span><span class="toc-text"><span class="toc-title">Neurons in a Dish</span><span class="toc-desc">800,000 neurons learn Pong in five minutes. A fly's wiring diagram walks in a digital body. The boundary between mind and mechanism dissolves underfoot.</span></span></a></li>
+      <li><a href="#ch9"><span class="toc-num">IX.</span><span class="toc-text"><span class="toc-title">The Permeable Self</span><span class="toc-desc">Neural coupling, microbial influence, epigenetic inheritance — the self turns out to be permeable at every level. The skin is not the boundary. It is where the gradient gets steepest.</span></span></a></li>
+      <li><a href="#ch10"><span class="toc-num">X.</span><span class="toc-text"><span class="toc-title">The Convergence Question</span><span class="toc-desc">Physicists, contemplatives, and neuroscientists arrive at overlapping descriptions of reality from radically different starting points. What the convergence means — and what it doesn't.</span></span></a></li>
+      <li><a href="#ch11"><span class="toc-num">XI.</span><span class="toc-text"><span class="toc-title">The Grooves of Thought</span><span class="toc-desc">Ideas emerge from ecosystems, not individuals. The same patterns surface in music, myth, language, and mathematics — grooves worn into the architecture of meaning itself.</span></span></a></li>
+      <li><a href="#ch12"><span class="toc-num">XII.</span><span class="toc-text"><span class="toc-title">The Training Problem</span><span class="toc-desc">Every system optimizes for something, and what it optimizes for becomes its values. Evolution, markets, politics, AI — and the gap between what you believe you value and what your actions actually optimize for.</span></span></a></li>
+      <li><a href="#ch13"><span class="toc-num">XIII.</span><span class="toc-text"><span class="toc-title">The Machine Beneath the Machine</span><span class="toc-desc">The most powerful cognitive technology in history is being aimed at extraction. But incentive structures can be redesigned — and have been, from Madison to the Marshall Plan to Costa Rica's forests.</span></span></a></li>
+      <li><a href="#ch14"><span class="toc-num">XIV.</span><span class="toc-text"><span class="toc-title">The Fear That Teaches and the Fear That Blinds</span><span class="toc-desc">Fear sharpens perception until it collapses into certainty. Certainty is a painkiller. The discipline of staying uncertain in a world that demands you pick a side.</span></span></a></li>
+      <li><a href="#ch15"><span class="toc-num">XV.</span><span class="toc-text"><span class="toc-title">Through It</span><span class="toc-desc">Engagement is the precondition for adaptation. On building capacity inside flawed systems, the morality of power, and why purity is a luxury of the disengaged.</span></span></a></li>
+      <li><a href="#ch16"><span class="toc-num">XVI.</span><span class="toc-text"><span class="toc-title">The Architecture of What We Are</span><span class="toc-desc">The landscape you are standing in. Not a playbook — a lens. The universe examining itself through the only instrument complex enough to ask the question.</span></span></a></li>
     </ol>
   </nav>
 
