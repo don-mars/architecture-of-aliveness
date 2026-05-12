@@ -9,6 +9,23 @@
 <meta property="og:description" content="On Complexity, Consciousness, and the Courage to Stay In. An essay by Marshall Donnelly.">
 <meta property="og:type" content="article">
 <meta property="article:author" content="Marshall Donnelly">
+<meta name="keywords" content="Architecture of Aliveness, Marshall Donnelly, complexity, consciousness, technology, AI, philosophy, essay">
+<link rel="canonical" href="https://don-mars.github.io/architecture-of-aliveness/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "The Architecture of Aliveness",
+  "alternativeHeadline": "On Complexity, Consciousness, and the Courage to Stay In",
+  "author": {
+    "@type": "Person",
+    "name": "Marshall Donnelly"
+  },
+  "description": "An essay tracing the arc from hydrogen to artificial intelligence, exploring complexity, consciousness, evil, perception, and what it means to stay engaged inside a system accelerating faster than anyone can map.",
+  "url": "https://don-mars.github.io/architecture-of-aliveness/",
+  "inLanguage": "en"
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
@@ -33,10 +50,47 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Site nav */
+.site-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: rgba(250, 248, 240, 0.95);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid #e8e4d8;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 0.7rem 1rem;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.site-nav a {
+  color: #999;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  padding: 0.2rem 0;
+}
+
+.site-nav a:hover {
+  color: #c9a84c;
+}
+
+.site-nav a.active {
+  color: #2c2c2c;
+  border-bottom: 1px solid #c9a84c;
+}
+
 /* Progress bar */
 #progress-bar {
   position: fixed;
-  top: 0;
+  top: 38px;
   left: 0;
   height: 3px;
   background: linear-gradient(90deg, #c9a84c, #d4a843, #e0c068);
@@ -358,6 +412,11 @@ body {
 </style>
 </head>
 <body>
+
+<nav class="site-nav">
+  <a href="index.html" class="active">Essay</a>
+  <a href="sources.html">Sources</a>
+</nav>
 
 <div id="progress-bar"></div>
 
@@ -749,11 +808,6 @@ body {
     <p>The universe has been building toward this moment for 13.8 billion years. Whatever it is building toward next will be built with us, or without us, or through us. And you are here. Reading this. Which means something in you is still looking. What you do with that is not my answer to give.</p>
   </section>
 
-  <!-- Sources link -->
-  <div class="divider"></div>
-  <nav style="text-align: center; padding: 3rem 0 5rem;">
-    <a href="sources.html" style="font-family: 'EB Garamond', Georgia, serif; font-size: 1.1rem; color: #8b7355; text-decoration: none; border-bottom: 1px solid #d4c9a8; padding-bottom: 2px; transition: color 0.2s ease;">Sources &amp; References</a>
-  </nav>
 
 </div>
 

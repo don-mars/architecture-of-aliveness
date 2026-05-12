@@ -3,12 +3,35 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sources & References — The Architecture of Aliveness</title>
-<meta name="description" content="Every person, study, book, experiment, and historical event referenced in The Architecture of Aliveness by Marshall Donnelly.">
+<title>Sources & References — The Architecture of Aliveness by Marshall Donnelly</title>
+<meta name="description" content="Complete list of sources, references, and citations in The Architecture of Aliveness by Marshall Donnelly. Includes studies, books, experiments, historical events, and named persons across all 16 sections.">
+<meta name="keywords" content="Architecture of Aliveness, Marshall Donnelly, sources, references, citations, complexity, consciousness, essay">
 <meta property="og:title" content="Sources & References — The Architecture of Aliveness">
-<meta property="og:description" content="Every person, study, book, experiment, and historical event referenced in the essay.">
+<meta property="og:description" content="Complete list of sources and references cited across all 16 sections of The Architecture of Aliveness by Marshall Donnelly.">
 <meta property="og:type" content="article">
 <meta property="article:author" content="Marshall Donnelly">
+<link rel="canonical" href="https://don-mars.github.io/architecture-of-aliveness/sources.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Sources & References — The Architecture of Aliveness",
+  "description": "Complete list of sources, references, and citations in The Architecture of Aliveness by Marshall Donnelly.",
+  "author": {
+    "@type": "Person",
+    "name": "Marshall Donnelly"
+  },
+  "isPartOf": {
+    "@type": "Article",
+    "name": "The Architecture of Aliveness",
+    "author": {
+      "@type": "Person",
+      "name": "Marshall Donnelly"
+    },
+    "url": "https://don-mars.github.io/architecture-of-aliveness/"
+  }
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
@@ -33,6 +56,43 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Site nav */
+.site-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: rgba(250, 248, 240, 0.95);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid #e8e4d8;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 0.7rem 1rem;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.site-nav a {
+  color: #999;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  padding: 0.2rem 0;
+}
+
+.site-nav a:hover {
+  color: #c9a84c;
+}
+
+.site-nav a.active {
+  color: #2c2c2c;
+  border-bottom: 1px solid #c9a84c;
+}
+
 .content-wrapper {
   max-width: 660px;
   margin: 0 auto;
@@ -41,7 +101,7 @@ body {
 
 /* Header */
 .page-header {
-  padding: 5rem 0 3rem;
+  padding: 6rem 0 3rem;
   text-align: center;
 }
 
@@ -223,12 +283,12 @@ body {
 </head>
 <body>
 
-<div class="content-wrapper">
+<nav class="site-nav">
+  <a href="index.html">Essay</a>
+  <a href="sources.html" class="active">Sources</a>
+</nav>
 
-  <!-- Back to Essay (top) -->
-  <div class="back-link-top">
-    <a href="index.html" class="back-link">&larr; Back to Essay</a>
-  </div>
+<div class="content-wrapper">
 
   <!-- Page Header -->
   <header class="page-header">
@@ -499,10 +559,6 @@ body {
     </ul>
   </div>
 
-  <!-- Back to Essay (bottom) -->
-  <div class="back-link-bottom">
-    <a href="index.html" class="back-link">&larr; Back to Essay</a>
-  </div>
 
 </div>
 
