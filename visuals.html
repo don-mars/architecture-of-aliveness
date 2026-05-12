@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visuals — The Architecture of Aliveness by Marshall Donnelly</title>
+<meta name="description" content="Infographic visuals from The Architecture of Aliveness by Marshall Donnelly. Includes the Compression Timeline and the Human Umwelt perception chart.">
+<meta name="keywords" content="Architecture of Aliveness, Marshall Donnelly, infographics, visuals, compression timeline, umwelt, perception, complexity">
+<meta property="og:title" content="Visuals — The Architecture of Aliveness">
+<meta property="og:description" content="Infographic visuals illustrating concepts from The Architecture of Aliveness by Marshall Donnelly.">
+<meta property="og:type" content="article">
+<meta property="article:author" content="Marshall Donnelly">
+<link rel="canonical" href="https://don-mars.github.io/architecture-of-aliveness/visuals.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Visuals — The Architecture of Aliveness",
+  "description": "Infographic visuals illustrating concepts from The Architecture of Aliveness by Marshall Donnelly.",
+  "author": {
+    "@type": "Person",
+    "name": "Marshall Donnelly"
+  },
+  "isPartOf": {
+    "@type": "Article",
+    "name": "The Architecture of Aliveness",
+    "author": {
+      "@type": "Person",
+      "name": "Marshall Donnelly"
+    },
+    "url": "https://don-mars.github.io/architecture-of-aliveness/"
+  }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 18px;
+}
+
+body {
+  background-color: #faf8f0;
+  color: #2c2c2c;
+  font-family: 'EB Garamond', Georgia, 'Times New Roman', serif;
+  line-height: 1.85;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Site nav */
+.site-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: rgba(250, 248, 240, 0.95);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid #e8e4d8;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 0.7rem 1rem;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.site-nav a {
+  color: #999;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  padding: 0.2rem 0;
+}
+
+.site-nav a:hover {
+  color: #c9a84c;
+}
+
+.site-nav a.active {
+  color: #2c2c2c;
+  border-bottom: 1px solid #c9a84c;
+}
+
+.content-wrapper {
+  max-width: 660px;
+  margin: 0 auto;
+  padding: 0 2rem 6rem;
+}
+
+/* Header */
+.page-header {
+  padding: 6rem 0 3rem;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 2.8rem;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  margin-bottom: 0.8rem;
+  color: #1a1a1a;
+}
+
+.page-header .subtitle {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #5a5a5a;
+  margin-bottom: 2rem;
+  letter-spacing: 0.02em;
+}
+
+.title-ornament {
+  width: 120px;
+  height: 1px;
+  background-color: #c9a84c;
+  margin: 0 auto 2rem;
+  position: relative;
+}
+
+.title-ornament::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 5px;
+  background-color: #c9a84c;
+  border-radius: 50%;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 3.5rem;
+}
+
+.section-heading {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e0dcd0;
+  line-height: 1.3;
+}
+
+.section p {
+  margin-bottom: 1.5rem;
+  color: #4a4a4a;
+  font-size: 0.95rem;
+}
+
+/* Infographic styles */
+.infographic {
+  margin: 3rem 0;
+  padding: 2rem 0;
+  border-top: 1px solid #e8e4d8;
+  border-bottom: 1px solid #e8e4d8;
+}
+
+.infographic svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.infographic figcaption {
+  text-align: center;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #888;
+  margin-top: 1rem;
+}
+
+/* Divider */
+.divider {
+  text-align: center;
+  margin: 4rem 0;
+  color: #c9a84c;
+  letter-spacing: 0.8em;
+  font-size: 0.8rem;
+  user-select: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+
+  .page-header h1 {
+    font-size: 2.1rem;
+  }
+
+  .page-header .subtitle {
+    font-size: 1.05rem;
+  }
+
+  .content-wrapper {
+    padding: 0 1.25rem 4rem;
+  }
+
+  .section-heading {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .page-header .subtitle {
+    font-size: 0.95rem;
+  }
+}
+
+/* Selection color */
+::selection {
+  background-color: rgba(201, 168, 76, 0.2);
+}
+
+::-moz-selection {
+  background-color: rgba(201, 168, 76, 0.2);
+}
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html">Essay</a>
+  <a href="visuals.html" class="active">Visuals</a>
+  <a href="sources.html">Sources</a>
+</nav>
+
+<div class="content-wrapper">
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <h1>Visuals</h1>
+    <p class="subtitle">Infographics illustrating concepts from the essay.</p>
+    <div class="title-ornament"></div>
+  </header>
+
+  <!-- Section 1: The Compression Timeline -->
+  <div class="section">
+    <h2 class="section-heading">The Compression Timeline</h2>
+    <p>From Section II: The Spiral. Each bar represents the duration between major transitions in the history of complexity — from hydrogen becoming stars to the emergence of artificial intelligence. The bars are scaled logarithmically. The pattern is the argument.</p>
+    <figure class="infographic">
+      <svg viewBox="0 0 620 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Compression Timeline: intervals between major transitions keep shortening">
+        <!-- LINEAR SCALE: 520px = 9 billion years. This is the point. -->
+        <text x="0" y="10" font-size="10" fill="#2c2c2c" font-family="inherit">Hydrogen → rocky planets</text>
+        <rect x="0" y="14" width="520" height="16" fill="#c9a84c" opacity="0.6" rx="2"/>
+        <text x="525" y="26" font-size="10" fill="#888" font-family="inherit">9 billion years</text>
+
+        <text x="0" y="44" font-size="10" fill="#2c2c2c" font-family="inherit">Single cells → multicellular</text>
+        <rect x="0" y="48" width="58" height="16" fill="#c9a84c" opacity="0.6" rx="2"/>
+        <text x="63" y="60" font-size="10" fill="#888" font-family="inherit">1 billion</text>
+
+        <text x="0" y="78" font-size="10" fill="#2c2c2c" font-family="inherit">Sea creatures → mammals</text>
+        <rect x="0" y="82" width="29" height="16" fill="#c9a84c" opacity="0.6" rx="2"/>
+        <text x="34" y="94" font-size="10" fill="#888" font-family="inherit">500 million</text>
+
+        <text x="0" y="112" font-size="10" fill="#2c2c2c" font-family="inherit">Early mammals → primates</text>
+        <rect x="0" y="116" width="4" height="16" fill="#c9a84c" opacity="0.7" rx="1"/>
+        <text x="9" y="128" font-size="10" fill="#888" font-family="inherit">60 million</text>
+
+        <text x="0" y="146" font-size="10" fill="#2c2c2c" font-family="inherit">Primates → hominids</text>
+        <rect x="0" y="150" width="2" height="16" fill="#c9a84c" opacity="0.85" rx="0"/>
+        <text x="7" y="162" font-size="10" fill="#888" font-family="inherit">4 million</text>
+
+        <text x="0" y="180" font-size="10" fill="#2c2c2c" font-family="inherit">→ Modern humans</text>
+        <rect x="0" y="184" width="2" height="16" fill="#c9a84c" opacity="0.85" rx="0"/>
+        <text x="7" y="196" font-size="10" fill="#888" font-family="inherit">300,000</text>
+
+        <text x="0" y="214" font-size="10" fill="#2c2c2c" font-family="inherit">Cognitive rev → agriculture</text>
+        <rect x="0" y="218" width="2" height="16" fill="#c9a84c" opacity="0.85" rx="0"/>
+        <text x="7" y="230" font-size="10" fill="#888" font-family="inherit">70,000</text>
+
+        <text x="0" y="248" font-size="10" fill="#2c2c2c" font-family="inherit">→ Writing</text>
+        <rect x="0" y="252" width="2" height="16" fill="#c9a84c" opacity="0.85" rx="0"/>
+        <text x="7" y="264" font-size="10" fill="#888" font-family="inherit">6,000</text>
+
+        <text x="0" y="282" font-size="10" fill="#2c2c2c" font-family="inherit">→ Printing press</text>
+        <rect x="0" y="286" width="2" height="16" fill="#c9a84c" opacity="0.85" rx="0"/>
+        <text x="7" y="298" font-size="10" fill="#888" font-family="inherit">4,800</text>
+
+        <text x="0" y="316" font-size="10" fill="#2c2c2c" font-family="inherit">→ Scientific Revolution</text>
+        <rect x="0" y="320" width="2" height="16" fill="#c9a84c" opacity="0.85" rx="0"/>
+        <text x="7" y="332" font-size="10" fill="#888" font-family="inherit">100</text>
+
+        <text x="0" y="350" font-size="10" fill="#2c2c2c" font-family="inherit">→ Industrial Revolution</text>
+        <rect x="0" y="354" width="2" height="16" fill="#c9a84c" opacity="0.85" rx="0"/>
+        <text x="7" y="366" font-size="10" fill="#888" font-family="inherit">60</text>
+
+        <text x="0" y="384" font-size="10" fill="#2c2c2c" font-family="inherit">→ 2nd Industrial Rev</text>
+        <rect x="0" y="388" width="2" height="16" fill="#c9a84c" opacity="0.85" rx="0"/>
+        <text x="7" y="400" font-size="10" fill="#888" font-family="inherit">30</text>
+
+        <text x="0" y="418" font-size="10" fill="#2c2c2c" font-family="inherit">→ Atomic Age</text>
+        <rect x="0" y="422" width="2" height="16" fill="#c9a84c" opacity="0.85" rx="0"/>
+        <text x="7" y="434" font-size="10" fill="#888" font-family="inherit">30</text>
+
+        <text x="0" y="452" font-size="10" fill="#2c2c2c" font-family="inherit">→ Digital Revolution</text>
+        <rect x="0" y="456" width="2" height="16" fill="#c9a84c" opacity="0.85" rx="0"/>
+        <text x="7" y="468" font-size="10" fill="#888" font-family="inherit">25</text>
+
+        <text x="0" y="486" font-size="10" fill="#2c2c2c" font-family="inherit">→ Artificial intelligence</text>
+        <rect x="0" y="490" width="2" height="16" fill="#c9a84c" opacity="0.85" rx="0"/>
+        <text x="7" y="502" font-size="10" fill="#888" font-family="inherit">20 years</text>
+      </svg>
+      <figcaption>The intervals keep shortening.</figcaption>
+    </figure>
+  </div>
+
+  <div class="divider">* * *</div>
+
+  <!-- Section 2: The Human Umwelt -->
+  <div class="section">
+    <h2 class="section-heading">The Human Umwelt</h2>
+    <p>From Section XII: The Training Problem. Five dimensions of physical reality that exist in Earth's environment, and the fraction humans consciously perceive. The gray bars represent what's here. The gold represents what we experience.</p>
+    <figure class="infographic">
+      <svg viewBox="0 0 600 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The Human Umwelt: what humans perceive vs what exists">
+
+        <!-- 1. LIGHT (y=40) -->
+        <text x="10" y="35" font-size="13" font-weight="bold" fill="#2c2c2c" font-family="serif">Electromagnetic Spectrum</text>
+        <rect x="10" y="40" width="520" height="24" rx="3" fill="#e8e4d8"/>
+        <rect x="268" y="40" width="2" height="24" rx="1" fill="#c9a84c" opacity="0.7"/>
+        <line x1="269" y1="40" x2="269" y2="30" stroke="#c9a84c" stroke-width="0.5"/>
+        <text x="275" y="33" font-size="8" fill="#c9a84c" font-family="serif">visible light</text>
+        <text x="540" y="56" font-size="12" fill="#c9a84c" font-family="serif">0.0035%</text>
+        <text x="10" y="78" font-size="9" fill="#999" font-family="serif">Radio · Microwave · Infrared · <tspan fill="#c9a84c">[VISIBLE]</tspan> · UV · X-ray · Gamma</text>
+
+        <!-- 2. SOUND (y=130) -->
+        <text x="10" y="125" font-size="13" font-weight="bold" fill="#2c2c2c" font-family="serif">Sound Frequencies</text>
+        <rect x="10" y="130" width="520" height="24" rx="3" fill="#e8e4d8"/>
+        <rect x="130" y="130" width="165" height="24" rx="3" fill="#c9a84c" opacity="0.7"/>
+        <text x="540" y="146" font-size="12" fill="#c9a84c" font-family="serif">~59%</text>
+        <text x="10" y="168" font-size="9" fill="#999" font-family="serif">Infrasound (elephants, earthquakes) · <tspan fill="#c9a84c">[HUMAN RANGE]</tspan> · Ultrasound (bats, dolphins)</text>
+
+        <!-- 3. SMELL (y=220) -->
+        <text x="10" y="215" font-size="13" font-weight="bold" fill="#2c2c2c" font-family="serif">Chemical Detection</text>
+        <rect x="10" y="220" width="520" height="24" rx="3" fill="#e8e4d8"/>
+        <rect x="10" y="220" width="50" height="24" rx="3" fill="#c9a84c" opacity="0.7"/>
+        <text x="540" y="236" font-size="12" fill="#c9a84c" font-family="serif">~10,000 odors</text>
+        <text x="10" y="258" font-size="9" fill="#999" font-family="serif">Dogs: 300M receptors · Humans: 5M · Sensitivity gap: 10,000-100,000x</text>
+
+        <!-- 4. MAGNETIC FIELDS (y=310) -->
+        <text x="10" y="305" font-size="13" font-weight="bold" fill="#2c2c2c" font-family="serif">Magnetic Fields</text>
+        <rect x="10" y="310" width="520" height="24" rx="3" fill="#e8e4d8"/>
+        <text x="200" y="326" font-size="10" font-style="italic" fill="#c9a84c" font-family="serif">0% conscious access</text>
+        <text x="540" y="326" font-size="12" fill="#c9a84c" font-family="serif">0%</text>
+        <text x="10" y="348" font-size="9" fill="#999" font-family="serif">Birds, sea turtles, bees navigate by it · Humans have cryptochrome but no conscious access</text>
+
+        <!-- 5. ELECTRICAL FIELDS (y=400) -->
+        <text x="10" y="395" font-size="13" font-weight="bold" fill="#2c2c2c" font-family="serif">Electrical Fields</text>
+        <rect x="10" y="400" width="520" height="24" rx="3" fill="#e8e4d8"/>
+        <text x="200" y="416" font-size="10" font-style="italic" fill="#c9a84c" font-family="serif">0% conscious access</text>
+        <text x="540" y="416" font-size="12" fill="#c9a84c" font-family="serif">0%</text>
+        <text x="10" y="438" font-size="9" fill="#999" font-family="serif">Sharks detect heartbeats through water · Platypus hunts by electroreception</text>
+
+      </svg>
+      <figcaption>Same planet. Different experienced realities.</figcaption>
+    </figure>
+  </div>
+
+</div>
+
+</body>
+</html>
