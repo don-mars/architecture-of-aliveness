@@ -639,47 +639,53 @@ body {
     <h2 class="section-heading">Survivorship Bias Filter</h2>
     <p>From Section IV: Reading History Backwards. The history we read is written by whatever comes out the bottom. The people who didn't survive aren't in the story.</p>
     <figure class="infographic">
-      <svg viewBox="0 0 440 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Survivorship Bias Filter: history is written by those who come out the other side">
-        <!-- Header -->
-        <text x="220" y="30" text-anchor="middle" font-size="12" font-weight="bold" fill="#2c2c2c" font-family="serif" font-variant="small-caps">EVERYONE WHO LIVED THROUGH IT</text>
+      <svg viewBox="0 0 520 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Survivorship Bias: what happened vs what we were taught">
 
-        <!-- Funnel shape -->
-        <path d="M 50,50 L 390,50 L 310,290 L 130,290 Z" fill="rgba(201,168,76,0.04)" stroke="#c9a84c" stroke-width="1.5"/>
+        <!-- LEFT COLUMN: What actually happened -->
+        <text x="130" y="22" text-anchor="middle" font-size="11" font-weight="bold" fill="#2c2c2c" font-family="serif">What actually happened</text>
+        <rect x="15" y="35" width="230" height="280" rx="4" fill="rgba(201,168,76,0.04)" stroke="#e0dcd0" stroke-width="1"/>
 
-        <!-- Left side: filtered out names, drifting left and fading -->
-        <text x="100" y="100" font-size="10" fill="#2c2c2c" font-family="serif" opacity="0.85">Luddites</text>
-        <text x="80" y="140" font-size="10" fill="#2c2c2c" font-family="serif" opacity="0.65">Indigenous peoples</text>
-        <text x="55" y="180" font-size="10" fill="#2c2c2c" font-family="serif" opacity="0.48">Japanese civilians</text>
-        <text x="35" y="220" font-size="10" fill="#2c2c2c" font-family="serif" opacity="0.32">Factory workers</text>
-        <text x="15" y="260" font-size="10" fill="#2c2c2c" font-family="serif" opacity="0.18">Oral cultures</text>
+        <text x="30" y="62" font-size="9.5" fill="#2c2c2c" font-family="serif">Luddites lost their livelihoods</text>
+        <text x="30" y="82" font-size="9.5" fill="#2c2c2c" font-family="serif">Indigenous peoples were colonized</text>
+        <text x="30" y="102" font-size="9.5" fill="#2c2c2c" font-family="serif">Japanese civilians were atomized</text>
+        <text x="30" y="122" font-size="9.5" fill="#2c2c2c" font-family="serif">Factory workers died in slums</text>
+        <text x="30" y="142" font-size="9.5" fill="#2c2c2c" font-family="serif">Oral cultures lost their memory</text>
+        <text x="30" y="162" font-size="9.5" fill="#2c2c2c" font-family="serif">Small farmers were displaced</text>
+        <line x1="30" y1="175" x2="230" y2="175" stroke="#e0dcd0" stroke-width="0.5"/>
+        <text x="30" y="195" font-size="9.5" fill="#2c2c2c" font-family="serif">Institutions adapted and survived</text>
+        <text x="30" y="215" font-size="9.5" fill="#2c2c2c" font-family="serif">Industrial output grew</text>
+        <text x="30" y="235" font-size="9.5" fill="#2c2c2c" font-family="serif">Child mortality eventually halved</text>
+        <text x="30" y="255" font-size="9.5" fill="#2c2c2c" font-family="serif">Billions lifted from poverty</text>
+        <text x="30" y="280" font-size="8" fill="#888" font-family="serif" font-style="italic">Both are true. Neither cancels the other.</text>
+        <text x="30" y="300" font-size="8" fill="#888" font-family="serif" font-style="italic">The people who suffered, suffered actually.</text>
 
-        <!-- Left-pointing arrows showing filtering out -->
-        <text x="85" y="117" font-size="9" fill="#c9a84c" opacity="0.7">&#8592;</text>
-        <text x="65" y="157" font-size="9" fill="#c9a84c" opacity="0.55">&#8592;</text>
-        <text x="42" y="197" font-size="9" fill="#c9a84c" opacity="0.4">&#8592;</text>
-        <text x="22" y="237" font-size="9" fill="#c9a84c" opacity="0.28">&#8592;</text>
+        <!-- ARROW between columns -->
+        <line x1="260" y1="175" x2="280" y2="175" stroke="#c9a84c" stroke-width="1.5"/>
+        <polygon points="278,169 292,175 278,181" fill="#c9a84c"/>
 
-        <!-- Right side: survivors emerging -->
-        <text x="310" y="310" font-size="14" font-weight="bold" fill="#2c2c2c" font-family="serif">SURVIVORS</text>
+        <!-- RIGHT COLUMN: What we were taught -->
+        <text x="390" y="22" text-anchor="middle" font-size="11" font-weight="bold" fill="#c9a84c" font-family="serif">What we were taught</text>
+        <rect x="280" y="35" width="230" height="280" rx="4" fill="rgba(201,168,76,0.06)" stroke="#c9a84c" stroke-width="1"/>
 
-        <!-- Large downward arrow -->
-        <line x1="340" y1="325" x2="340" y2="380" stroke="#c9a84c" stroke-width="2"/>
-        <polygon points="330,378 340,395 350,378" fill="#c9a84c"/>
+        <text x="295" y="62" font-size="9.5" fill="#2c2c2c" font-family="serif">The Luddites were foolish</text>
+        <text x="295" y="82" font-size="9.5" fill="#2c2c2c" font-family="serif">Colonization was civilization</text>
+        <text x="295" y="102" font-size="9.5" fill="#2c2c2c" font-family="serif">The bombs ended the war</text>
+        <text x="295" y="122" font-size="9.5" fill="#2c2c2c" font-family="serif">Industry created prosperity</text>
+        <text x="295" y="142" font-size="9.5" fill="#2c2c2c" font-family="serif">Writing replaced memory</text>
+        <text x="295" y="162" font-size="9.5" fill="#2c2c2c" font-family="serif">Progress was inevitable</text>
+        <line x1="295" y1="175" x2="495" y2="175" stroke="#c9a84c" stroke-width="0.5" opacity="0.3"/>
+        <text x="295" y="200" font-size="9.5" fill="#c9a84c" font-family="serif" font-style="italic">It always worked out.</text>
+        <text x="295" y="225" font-size="9.5" fill="#c9a84c" font-family="serif" font-style="italic">We always adapted.</text>
+        <text x="295" y="250" font-size="9.5" fill="#c9a84c" font-family="serif" font-style="italic">We are still here.</text>
 
-        <!-- "Who then told the story" -->
-        <text x="340" y="415" text-anchor="middle" font-size="11" fill="#2c2c2c" font-family="serif">Who then told the story</text>
+        <text x="295" y="285" font-size="8" fill="#888" font-family="serif">Told by the survivors.</text>
+        <text x="295" y="300" font-size="8" fill="#888" font-family="serif">About the survivors.</text>
 
-        <!-- Large arrow down to conclusion -->
-        <line x1="340" y1="425" x2="340" y2="445" stroke="#c9a84c" stroke-width="1.5"/>
-        <polygon points="333,443 340,455 347,443" fill="#c9a84c"/>
-
-        <!-- The version of history -->
-        <text x="220" y="475" text-anchor="middle" font-size="13" fill="#2c2c2c" font-family="serif">The version of history you were taught</text>
-
-        <!-- Gold italic insight -->
-        <text x="220" y="502" text-anchor="middle" font-size="10" fill="#c9a84c" font-family="serif" font-style="italic">is one perspective, told by whoever came through it</text>
+        <!-- Bottom line -->
+        <text x="260" y="350" text-anchor="middle" font-size="9" fill="#999" font-family="serif" font-style="italic">The right column is the only one most people have ever read.</text>
+        <text x="260" y="368" text-anchor="middle" font-size="9" fill="#999" font-family="serif" font-style="italic">The left column is what the essay is trying to hold alongside it.</text>
       </svg>
-      <figcaption>The funnel does not just filter people out — it filters the perspective.</figcaption>
+      <figcaption>History's optimism is survivorship bias — the voice of the winners narrating a story in which winning was inevitable.</figcaption>
     </figure>
   </div>
 
@@ -690,61 +696,79 @@ body {
     <h2 class="section-heading">The Training Problem Gap</h2>
     <p>From Section XII: The Training Problem. Every powerful system optimizes for something, and what it optimizes for becomes its de facto values — regardless of what its creators intended.</p>
     <figure class="infographic">
-      <svg viewBox="0 0 560 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The Training Problem Gap: what systems say vs what they optimize for">
-        <!-- Row 1: Evolution -->
-        <text x="10" y="45" font-size="13" font-weight="bold" fill="#2c2c2c" font-family="serif">Evolution</text>
-        <line x1="80" y1="40" x2="540" y2="40" stroke="#e8e4d8" stroke-width="2"/>
-        <line x1="80" y1="40" x2="540" y2="40" stroke="#c9a84c" stroke-width="0.5" stroke-dasharray="4,3"/>
-        <circle cx="80" cy="40" r="5" fill="none" stroke="#999" stroke-width="1.2"/>
-        <circle cx="540" cy="40" r="5" fill="#c9a84c"/>
-        <text x="80" y="58" text-anchor="middle" font-size="8" fill="#999" font-family="serif" font-style="italic">(nothing)</text>
-        <text x="540" y="58" text-anchor="middle" font-size="8" fill="#c9a84c" font-family="serif">Reproductive success</text>
+      <svg viewBox="0 0 520 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The Training Problem: what systems say vs what they optimize for">
 
-        <!-- Row 2: Markets -->
-        <text x="10" y="115" font-size="13" font-weight="bold" fill="#2c2c2c" font-family="serif">Markets</text>
-        <line x1="80" y1="110" x2="540" y2="110" stroke="#e8e4d8" stroke-width="2"/>
-        <line x1="80" y1="110" x2="540" y2="110" stroke="#c9a84c" stroke-width="0.5" stroke-dasharray="4,3"/>
-        <circle cx="80" cy="110" r="5" fill="none" stroke="#999" stroke-width="1.2"/>
-        <circle cx="540" cy="110" r="5" fill="#c9a84c"/>
-        <text x="80" y="128" text-anchor="middle" font-size="8" fill="#999" font-family="serif">Value creation</text>
-        <text x="540" y="128" text-anchor="middle" font-size="8" fill="#c9a84c" font-family="serif">Profit</text>
+        <!-- Legend at top -->
+        <rect x="10" y="8" width="12" height="10" rx="2" fill="#e8e4d8" stroke="#d0ccc0" stroke-width="0.5"/>
+        <text x="27" y="17" font-size="8" fill="#888" font-family="serif">What it says it values</text>
+        <rect x="180" y="8" width="12" height="10" rx="2" fill="#c9a84c" opacity="0.45"/>
+        <text x="197" y="17" font-size="8" fill="#888" font-family="serif">What it actually optimizes for</text>
+        <rect x="370" y="8" width="12" height="10" rx="2" fill="#c9a84c" opacity="0.12"/>
+        <text x="387" y="17" font-size="8" fill="#c9a84c" font-family="serif" font-style="italic">the gap</text>
 
-        <!-- Row 3: Social Media -->
-        <text x="10" y="185" font-size="13" font-weight="bold" fill="#2c2c2c" font-family="serif">Social Media</text>
-        <line x1="80" y1="180" x2="540" y2="180" stroke="#e8e4d8" stroke-width="2"/>
-        <line x1="80" y1="180" x2="540" y2="180" stroke="#c9a84c" stroke-width="0.5" stroke-dasharray="4,3"/>
-        <circle cx="80" cy="180" r="5" fill="none" stroke="#999" stroke-width="1.2"/>
-        <circle cx="540" cy="180" r="5" fill="#c9a84c"/>
-        <text x="80" y="198" text-anchor="middle" font-size="8" fill="#999" font-family="serif">Human connection</text>
-        <text x="540" y="198" text-anchor="middle" font-size="8" fill="#c9a84c" font-family="serif">Attention capture</text>
+        <!-- EVOLUTION -->
+        <text x="10" y="55" font-size="12" font-weight="bold" fill="#2c2c2c" font-family="serif">Evolution</text>
+        <!-- Says: nothing (0 width) -->
+        <rect x="10" y="62" width="0" height="18" rx="2" fill="#e8e4d8"/>
+        <text x="14" y="75" font-size="7.5" fill="#999" font-family="serif" font-style="italic">(no stated values)</text>
+        <!-- Optimizes for: reproductive success (full width) -->
+        <rect x="10" y="84" width="480" height="18" rx="2" fill="#c9a84c" opacity="0.45"/>
+        <text x="20" y="97" font-size="8.5" fill="#2c2c2c" font-family="serif">Reproductive success</text>
+        <!-- Gap shading -->
+        <rect x="10" y="62" width="480" height="40" rx="2" fill="#c9a84c" opacity="0.04"/>
 
-        <!-- Row 4: AI (current) -->
-        <text x="10" y="255" font-size="13" font-weight="bold" fill="#2c2c2c" font-family="serif">AI (current)</text>
-        <line x1="80" y1="250" x2="540" y2="250" stroke="#e8e4d8" stroke-width="2"/>
-        <line x1="80" y1="250" x2="540" y2="250" stroke="#c9a84c" stroke-width="0.5" stroke-dasharray="4,3"/>
-        <circle cx="80" cy="250" r="5" fill="none" stroke="#999" stroke-width="1.2"/>
-        <circle cx="540" cy="250" r="5" fill="#c9a84c"/>
-        <text x="80" y="268" text-anchor="middle" font-size="8" fill="#999" font-family="serif">Beneficial intelligence</text>
-        <text x="540" y="268" text-anchor="middle" font-size="8" fill="#c9a84c" font-family="serif">Whatever the loss function rewards</text>
+        <!-- MARKETS -->
+        <text x="10" y="130" font-size="12" font-weight="bold" fill="#2c2c2c" font-family="serif">Markets</text>
+        <!-- Says: value creation (medium bar) -->
+        <rect x="10" y="137" width="200" height="18" rx="2" fill="#e8e4d8" stroke="#d0ccc0" stroke-width="0.5"/>
+        <text x="20" y="150" font-size="8.5" fill="#2c2c2c" font-family="serif">Value creation</text>
+        <!-- Optimizes for: profit (wider bar) -->
+        <rect x="10" y="159" width="400" height="18" rx="2" fill="#c9a84c" opacity="0.45"/>
+        <text x="20" y="172" font-size="8.5" fill="#2c2c2c" font-family="serif">Profit extraction</text>
+        <!-- Gap shading -->
+        <rect x="200" y="137" width="210" height="40" rx="0" fill="#c9a84c" opacity="0.06"/>
+        <text x="290" y="155" text-anchor="middle" font-size="7" fill="#c9a84c" font-family="serif" font-style="italic">gap</text>
 
-        <!-- Row 5: Your life -->
-        <text x="10" y="335" font-size="13" font-weight="bold" fill="#2c2c2c" font-family="serif">Your life</text>
-        <line x1="80" y1="330" x2="540" y2="330" stroke="#e8e4d8" stroke-width="2"/>
-        <line x1="80" y1="330" x2="540" y2="330" stroke="#c9a84c" stroke-width="0.5" stroke-dasharray="4,3"/>
-        <text x="80" y="333" text-anchor="middle" font-size="14" fill="#999" font-family="serif">?</text>
-        <text x="540" y="333" text-anchor="middle" font-size="14" fill="#c9a84c" font-family="serif">?</text>
-        <text x="80" y="352" text-anchor="middle" font-size="8" fill="#999" font-family="serif" font-style="italic">?</text>
-        <text x="540" y="352" text-anchor="middle" font-size="8" fill="#c9a84c" font-family="serif" font-style="italic">?</text>
+        <!-- SOCIAL MEDIA -->
+        <text x="10" y="210" font-size="12" font-weight="bold" fill="#2c2c2c" font-family="serif">Social Media</text>
+        <!-- Says: connection (narrow bar) -->
+        <rect x="10" y="217" width="140" height="18" rx="2" fill="#e8e4d8" stroke="#d0ccc0" stroke-width="0.5"/>
+        <text x="20" y="230" font-size="8.5" fill="#2c2c2c" font-family="serif">Human connection</text>
+        <!-- Optimizes for: attention (much wider bar) -->
+        <rect x="10" y="239" width="450" height="18" rx="2" fill="#c9a84c" opacity="0.45"/>
+        <text x="20" y="252" font-size="8.5" fill="#2c2c2c" font-family="serif">Attention capture + engagement</text>
+        <!-- Gap shading -->
+        <rect x="140" y="217" width="320" height="40" rx="0" fill="#c9a84c" opacity="0.06"/>
+        <text x="300" y="235" text-anchor="middle" font-size="7" fill="#c9a84c" font-family="serif" font-style="italic">gap</text>
 
-        <!-- Legend -->
-        <circle cx="140" cy="400" r="4" fill="none" stroke="#999" stroke-width="1.2"/>
-        <text x="150" y="404" font-size="8" fill="#888" font-family="serif">What it claims to value</text>
-        <circle cx="330" cy="400" r="4" fill="#c9a84c"/>
-        <text x="340" y="404" font-size="8" fill="#888" font-family="serif">What it actually optimizes for</text>
-        <line x1="440" y1="400" x2="475" y2="400" stroke="#c9a84c" stroke-width="0.5" stroke-dasharray="4,3"/>
-        <text x="480" y="404" font-size="8" fill="#888" font-family="serif">the gap</text>
+        <!-- AI (CURRENT) -->
+        <text x="10" y="290" font-size="12" font-weight="bold" fill="#2c2c2c" font-family="serif">AI (current deployment)</text>
+        <!-- Says: beneficial intelligence (narrow) -->
+        <rect x="10" y="297" width="160" height="18" rx="2" fill="#e8e4d8" stroke="#d0ccc0" stroke-width="0.5"/>
+        <text x="20" y="310" font-size="8.5" fill="#2c2c2c" font-family="serif">Beneficial intelligence</text>
+        <!-- Optimizes for: whatever loss function rewards (full width) -->
+        <rect x="10" y="319" width="480" height="18" rx="2" fill="#c9a84c" opacity="0.45"/>
+        <text x="20" y="332" font-size="8.5" fill="#2c2c2c" font-family="serif">Whatever the loss function rewards</text>
+        <!-- Gap shading -->
+        <rect x="160" y="297" width="330" height="40" rx="0" fill="#c9a84c" opacity="0.06"/>
+        <text x="325" y="315" text-anchor="middle" font-size="7" fill="#c9a84c" font-family="serif" font-style="italic">gap</text>
+
+        <!-- YOUR LIFE -->
+        <text x="10" y="370" font-size="12" font-weight="bold" fill="#2c2c2c" font-family="serif">Your life</text>
+        <!-- Says: ??? -->
+        <rect x="10" y="377" width="200" height="18" rx="2" fill="#e8e4d8" stroke="#d0ccc0" stroke-width="0.5" stroke-dasharray="4,2"/>
+        <text x="100" y="390" text-anchor="middle" font-size="9" fill="#c9a84c" font-family="serif" font-style="italic">What do you say you value?</text>
+        <!-- Optimizes for: ??? -->
+        <rect x="10" y="399" width="350" height="18" rx="2" fill="#c9a84c" opacity="0.2" stroke="#c9a84c" stroke-width="0.5" stroke-dasharray="4,2"/>
+        <text x="180" y="412" text-anchor="middle" font-size="9" fill="#c9a84c" font-family="serif" font-style="italic">What do your actions actually optimize for?</text>
+        <!-- Gap -->
+        <rect x="200" y="377" width="160" height="40" rx="0" fill="#c9a84c" opacity="0.04"/>
+        <text x="280" y="395" text-anchor="middle" font-size="7" fill="#c9a84c" font-family="serif" font-style="italic">?</text>
+
+        <!-- Bottom note -->
+        <text x="260" y="448" text-anchor="middle" font-size="8" fill="#999" font-family="serif" font-style="italic">The gap between the top bar and the bottom bar is where the training problem lives.</text>
       </svg>
-      <figcaption>The gap is where the training problem lives.</figcaption>
+      <figcaption>What a system optimizes for becomes its values — regardless of what its creators intended.</figcaption>
     </figure>
   </div>
 
