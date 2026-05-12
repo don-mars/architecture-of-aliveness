@@ -264,103 +264,134 @@ body {
   <!-- Section 1: The Compression Timeline -->
   <div class="section">
     <h2 class="section-heading">The Compression Timeline</h2>
-    <p>From Section II: The Spiral. Each bar represents the duration between major transitions in the history of complexity. Bars are scaled linearly where the full width = 100 years. Any bar that would extend beyond the graph is capped, with the gold multiplier showing how many times wider it would actually be.</p>
+    <p>From Section II: The Spiral. The x-axis is time — 13.8 billion years compressed into one line. The y-axis is complexity. Each dot marks a transition. Notice where they cluster.</p>
     <figure class="infographic">
-      <svg viewBox="0 0 640 624" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Compression Timeline: intervals between major transitions keep shortening">
-        <!-- LINEAR SCALE: 520px = 100 years. Bars exceeding max are capped with a gold multiplier. -->
-        <text x="0" y="10" font-size="8.5" fill="#999" font-family="inherit" font-style="italic">Linear scale: full bar width = 100 years. Gold multipliers show how far beyond the graph each bar would extend.</text>
+      <svg viewBox="0 0 600 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Compression Timeline: exponential curve showing transitions clustering toward the present">
+        <!-- Axes -->
+        <line x1="60" y1="360" x2="570" y2="360" stroke="#2c2c2c" stroke-width="1"/>
+        <line x1="60" y1="360" x2="60" y2="30" stroke="#2c2c2c" stroke-width="1"/>
+        <text x="315" y="395" font-size="10" fill="#888" font-family="serif" text-anchor="middle">TIME →</text>
+        <text x="15" y="195" font-size="10" fill="#888" font-family="serif" text-anchor="middle" transform="rotate(-90,15,195)">COMPLEXITY →</text>
+        <text x="63" y="375" font-size="7.5" fill="#999" font-family="serif">13.8 billion years ago</text>
+        <text x="570" y="375" font-size="7.5" fill="#999" font-family="serif" text-anchor="end">now</text>
 
-        <!-- CAPPED BARS — all max out at 520px, multiplier shows true scale -->
-        <text x="0" y="32" font-size="10" fill="#2c2c2c" font-family="inherit">Hydrogen → rocky planets</text>
-        <rect x="0" y="36" width="520" height="16" fill="#c9a84c" opacity="0.6" rx="2"/>
-        <text x="508" y="48" font-size="10" fill="#c9a84c" font-family="inherit">▸</text>
-        <text x="525" y="48" font-size="9" fill="#888" font-family="inherit">9 billion yrs</text>
-        <text x="635" y="48" font-size="9" fill="#c9a84c" font-family="inherit" font-weight="bold" text-anchor="end">×90,000,000</text>
+        <!-- X-axis positions: log-scaled so that events spread out visually -->
+        <!-- Using log10(years_ago) mapped to x: 60=oldest, 560=now -->
+        <!-- Stars: 13.8B yrs ago → x=68 -->
+        <!-- Rocky planets: 4.8B → x=115 -->
+        <!-- First cells: 3.8B → x=135 -->
+        <!-- Multicellular: 800M → x=220 -->
+        <!-- Mammals: 300M → x=270 -->
+        <!-- Primates: 60M → x=330 -->
+        <!-- Hominids: 4M → x=395 -->
+        <!-- Modern humans: 300K → x=435 -->
+        <!-- Cognitive rev: 70K → x=460 -->
+        <!-- Agriculture: 12K → x=490 -->
+        <!-- Writing: 6K → x=502 -->
+        <!-- Printing: 580yr → x=530 -->
+        <!-- Sci Rev: 370yr → x=537 -->
+        <!-- Industrial: 265yr → x=541 -->
+        <!-- 2nd Ind: 150yr → x=547 -->
+        <!-- Atomic: 80yr → x=552 -->
+        <!-- Digital: 55yr → x=555 -->
+        <!-- AI: 20yr → x=560 -->
 
-        <text x="0" y="66" font-size="10" fill="#2c2c2c" font-family="inherit">Single cells → multicellular</text>
-        <rect x="0" y="70" width="520" height="16" fill="#c9a84c" opacity="0.6" rx="2"/>
-        <text x="508" y="82" font-size="10" fill="#c9a84c" font-family="inherit">▸</text>
-        <text x="525" y="82" font-size="9" fill="#888" font-family="inherit">1 billion</text>
-        <text x="635" y="82" font-size="9" fill="#c9a84c" font-family="inherit" font-weight="bold" text-anchor="end">×10,000,000</text>
+        <!-- Subtle grid lines -->
+        <line x1="220" y1="360" x2="220" y2="35" stroke="#e8e4d8" stroke-width="0.5"/>
+        <line x1="395" y1="360" x2="395" y2="35" stroke="#e8e4d8" stroke-width="0.5"/>
+        <line x1="490" y1="360" x2="490" y2="35" stroke="#e8e4d8" stroke-width="0.5"/>
+        <line x1="540" y1="360" x2="540" y2="35" stroke="#e8e4d8" stroke-width="0.5"/>
 
-        <text x="0" y="100" font-size="10" fill="#2c2c2c" font-family="inherit">Sea creatures → mammals</text>
-        <rect x="0" y="104" width="520" height="16" fill="#c9a84c" opacity="0.6" rx="2"/>
-        <text x="508" y="116" font-size="10" fill="#c9a84c" font-family="inherit">▸</text>
-        <text x="525" y="116" font-size="9" fill="#888" font-family="inherit">500 million</text>
-        <text x="635" y="116" font-size="9" fill="#c9a84c" font-family="inherit" font-weight="bold" text-anchor="end">×5,000,000</text>
+        <!-- The curve — exponential acceleration -->
+        <path d="M68,355 C100,354 130,352 220,345 S330,320 395,290 S435,240 460,200 S490,140 502,110 S530,70 541,55 S552,42 560,35"
+              fill="none" stroke="#c9a84c" stroke-width="2.5" opacity="0.7"/>
+        <!-- Subtle fill under curve -->
+        <path d="M68,355 C100,354 130,352 220,345 S330,320 395,290 S435,240 460,200 S490,140 502,110 S530,70 541,55 S552,42 560,35 L560,360 L68,360 Z"
+              fill="#c9a84c" opacity="0.06"/>
 
-        <text x="0" y="134" font-size="10" fill="#2c2c2c" font-family="inherit">Early mammals → primates</text>
-        <rect x="0" y="138" width="520" height="16" fill="#c9a84c" opacity="0.6" rx="2"/>
-        <text x="508" y="150" font-size="10" fill="#c9a84c" font-family="inherit">▸</text>
-        <text x="525" y="150" font-size="9" fill="#888" font-family="inherit">60 million</text>
-        <text x="635" y="150" font-size="9" fill="#c9a84c" font-family="inherit" font-weight="bold" text-anchor="end">×600,000</text>
+        <!-- Event dots + labels -->
+        <!-- Stars ignite -->
+        <circle cx="68" cy="355" r="3.5" fill="#c9a84c"/>
+        <text x="72" y="350" font-size="7" fill="#2c2c2c" font-family="serif">Stars ignite</text>
+        <text x="72" y="358" font-size="6" fill="#999" font-family="serif">13.8B yrs ago</text>
 
-        <text x="0" y="168" font-size="10" fill="#2c2c2c" font-family="inherit">Primates → hominids</text>
-        <rect x="0" y="172" width="520" height="16" fill="#c9a84c" opacity="0.6" rx="2"/>
-        <text x="508" y="184" font-size="10" fill="#c9a84c" font-family="inherit">▸</text>
-        <text x="525" y="184" font-size="9" fill="#888" font-family="inherit">4 million</text>
-        <text x="635" y="184" font-size="9" fill="#c9a84c" font-family="inherit" font-weight="bold" text-anchor="end">×40,000</text>
+        <!-- Rocky planets -->
+        <circle cx="115" cy="353" r="3.5" fill="#c9a84c"/>
+        <text x="100" y="344" font-size="7" fill="#2c2c2c" font-family="serif">Rocky planets</text>
 
-        <text x="0" y="202" font-size="10" fill="#2c2c2c" font-family="inherit">→ Modern humans</text>
-        <rect x="0" y="206" width="520" height="16" fill="#c9a84c" opacity="0.6" rx="2"/>
-        <text x="508" y="218" font-size="10" fill="#c9a84c" font-family="inherit">▸</text>
-        <text x="525" y="218" font-size="9" fill="#888" font-family="inherit">300,000</text>
-        <text x="635" y="218" font-size="9" fill="#c9a84c" font-family="inherit" font-weight="bold" text-anchor="end">×3,000</text>
+        <!-- First cells -->
+        <circle cx="135" cy="351" r="3.5" fill="#c9a84c"/>
+        <text x="139" y="348" font-size="7" fill="#2c2c2c" font-family="serif">First cells</text>
 
-        <text x="0" y="236" font-size="10" fill="#2c2c2c" font-family="inherit">Cognitive rev → agriculture</text>
-        <rect x="0" y="240" width="520" height="16" fill="#c9a84c" opacity="0.6" rx="2"/>
-        <text x="508" y="252" font-size="10" fill="#c9a84c" font-family="inherit">▸</text>
-        <text x="525" y="252" font-size="9" fill="#888" font-family="inherit">70,000</text>
-        <text x="635" y="252" font-size="9" fill="#c9a84c" font-family="inherit" font-weight="bold" text-anchor="end">×700</text>
+        <!-- Multicellular -->
+        <circle cx="220" cy="345" r="3.5" fill="#c9a84c"/>
+        <text x="205" y="337" font-size="7" fill="#2c2c2c" font-family="serif">Multicellular life</text>
 
-        <text x="0" y="270" font-size="10" fill="#2c2c2c" font-family="inherit">→ Writing</text>
-        <rect x="0" y="274" width="520" height="16" fill="#c9a84c" opacity="0.6" rx="2"/>
-        <text x="508" y="286" font-size="10" fill="#c9a84c" font-family="inherit">▸</text>
-        <text x="525" y="286" font-size="9" fill="#888" font-family="inherit">6,000</text>
-        <text x="635" y="286" font-size="9" fill="#c9a84c" font-family="inherit" font-weight="bold" text-anchor="end">×60</text>
+        <!-- Mammals -->
+        <circle cx="270" cy="335" r="3.5" fill="#c9a84c"/>
+        <text x="255" y="327" font-size="7" fill="#2c2c2c" font-family="serif">Mammals</text>
 
-        <text x="0" y="304" font-size="10" fill="#2c2c2c" font-family="inherit">→ Printing press</text>
-        <rect x="0" y="308" width="520" height="16" fill="#c9a84c" opacity="0.6" rx="2"/>
-        <text x="508" y="320" font-size="10" fill="#c9a84c" font-family="inherit">▸</text>
-        <text x="525" y="320" font-size="9" fill="#888" font-family="inherit">4,800</text>
-        <text x="635" y="320" font-size="9" fill="#c9a84c" font-family="inherit" font-weight="bold" text-anchor="end">×48</text>
+        <!-- Primates -->
+        <circle cx="330" cy="315" r="3.5" fill="#c9a84c"/>
+        <text x="315" y="307" font-size="7" fill="#2c2c2c" font-family="serif">Primates</text>
 
-        <!-- DIVIDER — bars below this line fit on the graph at true scale -->
-        <line x1="0" y1="338" x2="520" y2="338" stroke="#c9a84c" stroke-width="0.5" stroke-dasharray="4,3" opacity="0.5"/>
-        <text x="525" y="341" font-size="7.5" fill="#c9a84c" font-family="inherit" font-style="italic">↓ bars below fit at true scale (520px = 6,000 years)</text>
+        <!-- Hominids -->
+        <circle cx="395" cy="290" r="3.5" fill="#c9a84c"/>
+        <text x="380" y="282" font-size="7" fill="#2c2c2c" font-family="serif">Hominids</text>
 
-        <!-- TRUE-SCALE BARS — 520px = 6,000 years. 1px ≈ 11.5 years. -->
-        <text x="0" y="358" font-size="10" fill="#2c2c2c" font-family="inherit">→ Writing</text>
-        <rect x="0" y="362" width="520" height="16" fill="#c9a84c" opacity="0.6" rx="2"/>
-        <text x="525" y="374" font-size="9" fill="#888" font-family="inherit">6,000 years</text>
+        <!-- Modern humans -->
+        <circle cx="435" cy="245" r="3.5" fill="#c9a84c"/>
+        <text x="420" y="237" font-size="7" fill="#2c2c2c" font-family="serif">Modern humans</text>
 
-        <text x="0" y="392" font-size="10" fill="#2c2c2c" font-family="inherit">→ Printing press</text>
-        <rect x="0" y="396" width="416" height="16" fill="#c9a84c" opacity="0.6" rx="2"/>
-        <text x="421" y="408" font-size="9" fill="#888" font-family="inherit">4,800</text>
+        <!-- Cognitive revolution -->
+        <circle cx="460" cy="200" r="3.5" fill="#c9a84c"/>
+        <text x="445" y="192" font-size="7" fill="#2c2c2c" font-family="serif">Language</text>
 
-        <text x="0" y="426" font-size="10" fill="#2c2c2c" font-family="inherit">→ Scientific Revolution</text>
-        <rect x="0" y="430" width="9" height="16" fill="#c9a84c" opacity="0.8" rx="1"/>
-        <text x="14" y="442" font-size="9" fill="#888" font-family="inherit">100</text>
+        <!-- Agriculture -->
+        <circle cx="490" cy="140" r="3.5" fill="#c9a84c"/>
+        <text x="475" y="132" font-size="7" fill="#2c2c2c" font-family="serif">Agriculture</text>
 
-        <text x="0" y="460" font-size="10" fill="#2c2c2c" font-family="inherit">→ Industrial Revolution</text>
-        <rect x="0" y="464" width="5" height="16" fill="#c9a84c" opacity="0.8" rx="0"/>
-        <text x="10" y="476" font-size="9" fill="#888" font-family="inherit">60</text>
+        <!-- Writing -->
+        <circle cx="502" cy="110" r="3.5" fill="#c9a84c"/>
+        <text x="487" y="102" font-size="7" fill="#2c2c2c" font-family="serif">Writing</text>
 
-        <text x="0" y="494" font-size="10" fill="#2c2c2c" font-family="inherit">→ 2nd Industrial Rev</text>
-        <rect x="0" y="498" width="3" height="16" fill="#c9a84c" opacity="0.9" rx="0"/>
-        <text x="8" y="510" font-size="9" fill="#888" font-family="inherit">30</text>
+        <!-- From here, dots cluster tightly — the compression -->
+        <!-- Printing press -->
+        <circle cx="530" cy="70" r="3" fill="#c9a84c"/>
+        <line x1="530" y1="70" x2="510" y2="60" stroke="#c9a84c" stroke-width="0.4"/>
+        <text x="480" y="58" font-size="6.5" fill="#2c2c2c" font-family="serif">Printing press</text>
 
-        <text x="0" y="528" font-size="10" fill="#2c2c2c" font-family="inherit">→ Atomic Age</text>
-        <rect x="0" y="532" width="3" height="16" fill="#c9a84c" opacity="0.9" rx="0"/>
-        <text x="8" y="544" font-size="9" fill="#888" font-family="inherit">30</text>
+        <!-- Scientific Revolution -->
+        <circle cx="537" cy="60" r="3" fill="#c9a84c"/>
+        <line x1="537" y1="60" x2="517" y2="48" stroke="#c9a84c" stroke-width="0.4"/>
+        <text x="480" y="46" font-size="6.5" fill="#2c2c2c" font-family="serif">Scientific Rev</text>
 
-        <text x="0" y="562" font-size="10" fill="#2c2c2c" font-family="inherit">→ Digital Revolution</text>
-        <rect x="0" y="566" width="2" height="16" fill="#c9a84c" opacity="0.9" rx="0"/>
-        <text x="7" y="578" font-size="9" fill="#888" font-family="inherit">25</text>
+        <!-- Industrial -->
+        <circle cx="541" cy="53" r="3" fill="#c9a84c"/>
 
-        <text x="0" y="596" font-size="10" fill="#2c2c2c" font-family="inherit">→ Artificial intelligence</text>
-        <rect x="0" y="600" width="2" height="16" fill="#c9a84c" opacity="0.9" rx="0"/>
-        <text x="7" y="612" font-size="9" fill="#888" font-family="inherit">20 years</text>
+        <!-- 2nd Industrial -->
+        <circle cx="547" cy="46" r="2.5" fill="#c9a84c"/>
+
+        <!-- Atomic -->
+        <circle cx="552" cy="42" r="2.5" fill="#c9a84c"/>
+
+        <!-- Digital -->
+        <circle cx="555" cy="39" r="2.5" fill="#c9a84c"/>
+
+        <!-- AI -->
+        <circle cx="560" cy="35" r="3" fill="#c9a84c"/>
+
+        <!-- Cluster label for the modern compression -->
+        <rect x="537" y="65" width="30" height="32" rx="2" fill="none" stroke="#c9a84c" stroke-width="0.5" stroke-dasharray="2,2" opacity="0.5"/>
+        <line x1="567" y1="81" x2="580" y2="81" stroke="#c9a84c" stroke-width="0.4"/>
+        <text x="540" y="108" font-size="6.5" fill="#c9a84c" font-family="serif" font-style="italic">Industrial Rev</text>
+        <text x="540" y="116" font-size="6.5" fill="#c9a84c" font-family="serif" font-style="italic">2nd Industrial</text>
+        <text x="540" y="124" font-size="6.5" fill="#c9a84c" font-family="serif" font-style="italic">Atomic Age</text>
+        <text x="540" y="132" font-size="6.5" fill="#c9a84c" font-family="serif" font-style="italic">Digital Rev</text>
+        <text x="540" y="140" font-size="6.5" fill="#c9a84c" font-family="serif" font-style="italic">AI</text>
+
+        <!-- Annotation -->
+        <text x="560" y="408" font-size="7.5" fill="#999" font-family="serif" font-style="italic" text-anchor="end">Every dot on the right half of this graph happened in the last 0.0005% of the timeline.</text>
       </svg>
       <figcaption>The intervals keep shortening.</figcaption>
     </figure>
