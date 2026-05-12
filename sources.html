@@ -283,6 +283,22 @@ body {
   }
 }
 
+/* Study links */
+.study-link {
+  font-size: 0.8rem;
+  color: #c9a84c;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  margin-left: 0.4rem;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  transition: border-color 0.2s ease;
+}
+
+.study-link:hover {
+  border-bottom-color: #c9a84c;
+}
+
 /* Selection color */
 ::selection {
   background-color: rgba(201, 168, 76, 0.2);
@@ -376,7 +392,7 @@ body {
       <li><strong><a href="https://en.wikipedia.org/wiki/Eichmann_in_Jerusalem" target="_blank" rel="noopener noreferrer">Hannah Arendt</a></strong> <span class="desc">— Coined "the banality of evil" observing the trial of Adolf Eichmann</span></li>
       <li><strong><a href="https://en.wikipedia.org/wiki/Adolf_Eichmann" target="_blank" rel="noopener noreferrer">Adolf Eichmann</a></strong> <span class="desc">— Nazi bureaucrat whose trial Arendt observed</span></li>
       <li><strong><a href="https://en.wikipedia.org/wiki/Shadow_(psychology)" target="_blank" rel="noopener noreferrer">Carl Jung</a></strong> <span class="desc">— The "shadow"; moral maturity through integrating darkness</span></li>
-      <li><strong><a href="https://en.wikipedia.org/wiki/Milgram_experiment" target="_blank" rel="noopener noreferrer">The Milgram experiments</a></strong> <span class="desc">— Ordinary people committing harmful acts under authority pressure</span></li>
+      <li><strong><a href="https://en.wikipedia.org/wiki/Milgram_experiment" target="_blank" rel="noopener noreferrer">The Milgram experiments</a></strong> <span class="desc">— Ordinary people committing harmful acts under authority pressure</span> <a href="https://psycnet.apa.org/record/1964-03472-001" target="_blank" rel="noopener noreferrer" class="study-link">[Paper]</a></li>
       <li><strong><a href="https://en.wikipedia.org/wiki/Stanford_prison_experiment" target="_blank" rel="noopener noreferrer">The Stanford prison study</a></strong> <span class="desc">— Situational pressures leading ordinary people to harmful acts</span></li>
       <li><strong><a href="https://en.wikipedia.org/wiki/Isaiah_Berlin" target="_blank" rel="noopener noreferrer">Isaiah Berlin</a></strong> <span class="desc">— Value pluralism; genuine moral goods can conflict without resolution</span></li>
       <li><strong><a href="https://en.wikipedia.org/wiki/French_Revolution" target="_blank" rel="noopener noreferrer">The French Revolution</a></strong> <span class="desc">— Arc from the Declaration of the Rights of Man to the Terror</span></li>
@@ -418,12 +434,12 @@ body {
       Neurons in a Dish
     </h2>
     <ul class="reference-list">
-      <li><strong><a href="https://en.wikipedia.org/wiki/Cortical_Labs" target="_blank" rel="noopener noreferrer">Cortical Labs (Melbourne, 2022)</a></strong> <span class="desc">— Grew ~800,000 neurons on silicon; the DishBrain system learned Pong in five minutes</span></li>
+      <li><strong><a href="https://en.wikipedia.org/wiki/Cortical_Labs" target="_blank" rel="noopener noreferrer">Cortical Labs (Melbourne, 2022)</a></strong> <span class="desc">— Grew ~800,000 neurons on silicon; the DishBrain system learned Pong in five minutes</span> <a href="https://www.cell.com/neuron/fulltext/S0896-6273(22)00806-6" target="_blank" rel="noopener noreferrer" class="study-link">[Paper]</a></li>
       <li><strong><a href="https://en.wikipedia.org/wiki/Karl_J._Friston" target="_blank" rel="noopener noreferrer">Karl Friston</a></strong> <span class="desc">— Free energy principle; neurons minimize unpredictability in their environment</span></li>
       <li><strong><a href="https://en.wikipedia.org/wiki/Cortical_Labs" target="_blank" rel="noopener noreferrer">Cortical Labs (by 2026)</a></strong> <span class="desc">— Neurons playing Doom; open API for biological computing</span></li>
       <li><strong>Eon Systems</strong> <span class="desc">— Built a computational model from the FlyWire connectome</span></li>
-      <li><strong><a href="https://en.wikipedia.org/wiki/FlyWire" target="_blank" rel="noopener noreferrer">The FlyWire connectome</a></strong> <span class="desc">— Complete wiring diagram of an adult fruit fly brain: ~125,000 neurons, ~50 million synaptic connections, mapped from 7,000 slices of electron microscopy</span></li>
-      <li><strong><a href="https://en.wikipedia.org/wiki/David_H._Hubel" target="_blank" rel="noopener noreferrer">David Hubel and Torsten Wiesel</a></strong> <span class="desc">— Nobel Prize for demonstrating hierarchical feature detection in the cat visual cortex</span></li>
+      <li><strong><a href="https://en.wikipedia.org/wiki/FlyWire" target="_blank" rel="noopener noreferrer">The FlyWire connectome</a></strong> <span class="desc">— Complete wiring diagram of an adult fruit fly brain: ~125,000 neurons, ~50 million synaptic connections, mapped from 7,000 slices of electron microscopy</span> <a href="https://www.nature.com/articles/s41586-024-07686-5" target="_blank" rel="noopener noreferrer" class="study-link">[Paper]</a></li>
+      <li><strong><a href="https://en.wikipedia.org/wiki/David_H._Hubel" target="_blank" rel="noopener noreferrer">David Hubel and Torsten Wiesel</a></strong> <span class="desc">— Nobel Prize for demonstrating hierarchical feature detection in the cat visual cortex</span> <a href="https://www.nobelprize.org/prizes/medicine/1981/summary/" target="_blank" rel="noopener noreferrer" class="study-link">[Nobel Prize]</a></li>
       <li><strong><a href="https://en.wikipedia.org/wiki/Hebbian_theory" target="_blank" rel="noopener noreferrer">Donald Hebb</a></strong> <span class="desc">— "Neurons that fire together wire together"; Hebbian learning</span></li>
       <li><strong><a href="https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)" target="_blank" rel="noopener noreferrer">Transformer architecture attention mechanisms</a></strong> <span class="desc">— Artificial analog to the biological thalamus</span></li>
     </ul>
@@ -436,9 +452,9 @@ body {
       The Permeable Self
     </h2>
     <ul class="reference-list">
-      <li><strong>Uri Hasson (Princeton)</strong> <span class="desc">— Brain scanner study showing listener neural activity mirrors and anticipates speaker's patterns</span></li>
-      <li><strong>Gut bacteria transplant study</strong> <span class="desc">— Transplanting gut bacteria from anxious mice into calm ones made them anxious</span></li>
-      <li><strong><a href="https://en.wikipedia.org/wiki/Transgenerational_epigenetic_inheritance" target="_blank" rel="noopener noreferrer">Epigenetic transmission research</a></strong> <span class="desc">— Stress responses and trauma passing across generations through gene expression</span></li>
+      <li><strong>Uri Hasson (Princeton)</strong> <span class="desc">— Brain scanner study showing listener neural activity mirrors and anticipates speaker's patterns</span> <a href="https://www.pnas.org/doi/10.1073/pnas.1008662107" target="_blank" rel="noopener noreferrer" class="study-link">[Paper]</a></li>
+      <li><strong>Gut bacteria transplant study</strong> <span class="desc">— Transplanting gut bacteria from anxious mice into calm ones made them anxious</span> <a href="https://pubmed.ncbi.nlm.nih.gov/31124390/" target="_blank" rel="noopener noreferrer" class="study-link">[Study]</a></li>
+      <li><strong><a href="https://en.wikipedia.org/wiki/Transgenerational_epigenetic_inheritance" target="_blank" rel="noopener noreferrer">Epigenetic transmission research</a></strong> <span class="desc">— Stress responses and trauma passing across generations through gene expression</span> <a href="https://www.biologicalpsychiatryjournal.com/article/s0006-3223(15)00652-6/fulltext" target="_blank" rel="noopener noreferrer" class="study-link">[Paper]</a></li>
       <li><strong>Holocaust survivors' descendants</strong> <span class="desc">— Measurable differences in cortisol regulation</span></li>
       <li><strong>Famine survivors' descendants</strong> <span class="desc">— Altered metabolic responses to scarcity</span></li>
     </ul>
@@ -454,7 +470,7 @@ body {
       <li><strong><a href="https://en.wikipedia.org/wiki/14th_Dalai_Lama" target="_blank" rel="noopener noreferrer">The Dalai Lama</a></strong> <span class="desc">— Engaged formally with physicists through the Mind and Life Institute since 1987</span></li>
       <li><strong><a href="https://en.wikipedia.org/wiki/Mind_and_Life_Institute" target="_blank" rel="noopener noreferrer">The Mind and Life Institute (1987)</a></strong> <span class="desc">— Structured scholarly dialogue between Buddhist contemplatives and physicists</span></li>
       <li><strong>The Dalai Lama's quote</strong> <span class="desc">— "If on the quantum level, matter is revealed to be less solid and definable than it appears, then it seems to me that science is coming closer to the Buddhist contemplative insights of emptiness and interdependence."</span></li>
-      <li><strong><a href="https://en.wikipedia.org/wiki/Psilocybin_research_at_Johns_Hopkins" target="_blank" rel="noopener noreferrer">Johns Hopkins psilocybin research</a></strong> <span class="desc">— Brain imaging showed reduced activity in the claustrum; >70% reported complete mystical experiences; 67% rated it among five most spiritually significant at 14-month follow-up</span></li>
+      <li><strong><a href="https://en.wikipedia.org/wiki/Psilocybin_research_at_Johns_Hopkins" target="_blank" rel="noopener noreferrer">Johns Hopkins psilocybin research</a></strong> <span class="desc">— Brain imaging showed reduced activity in the claustrum; >70% reported complete mystical experiences; 67% rated it among five most spiritually significant at 14-month follow-up</span> <a href="https://link.springer.com/article/10.1007/s00213-006-0457-5" target="_blank" rel="noopener noreferrer" class="study-link">[Paper]</a></li>
     </ul>
   </div>
 
@@ -486,15 +502,15 @@ body {
       The Training Problem
     </h2>
     <ul class="reference-list">
-      <li><strong><a href="https://en.wikipedia.org/wiki/Donald_D._Hoffman" target="_blank" rel="noopener noreferrer">Chetan Prakash, Donald Hoffman, et al. (2020)</a></strong> <span class="desc">— Formally proved the Fitness-Beats-Truth theorem using evolutionary game theory and Bayesian decision theory</span></li>
+      <li><strong><a href="https://en.wikipedia.org/wiki/Donald_D._Hoffman" target="_blank" rel="noopener noreferrer">Chetan Prakash, Donald Hoffman, et al. (2020)</a></strong> <span class="desc">— Formally proved the Fitness-Beats-Truth theorem using evolutionary game theory and Bayesian decision theory</span> <a href="https://pubmed.ncbi.nlm.nih.gov/33231784/" target="_blank" rel="noopener noreferrer" class="study-link">[Paper]</a></li>
       <li><strong><a href="https://en.wikipedia.org/wiki/David_Eagleman" target="_blank" rel="noopener noreferrer">David Eagleman</a></strong> <span class="desc">— The Umwelt; perceptual confinement defined by sensory apparatus</span></li>
       <li><strong><a href="https://en.wikipedia.org/wiki/Jakob_von_Uexk%C3%BCll" target="_blank" rel="noopener noreferrer">Jakob von Uexk&uuml;ll</a></strong> <span class="desc">— Originated the Umwelt concept (not named in essay but worth crediting)</span></li>
-      <li><strong><a href="https://en.wikipedia.org/wiki/Joseph_Kirschvink" target="_blank" rel="noopener noreferrer">Joe Kirschvink (geophysicist)</a></strong> <span class="desc">— Experiments showing human brainwaves respond to magnetic field changes despite subjects reporting no conscious awareness</span></li>
+      <li><strong><a href="https://en.wikipedia.org/wiki/Joseph_Kirschvink" target="_blank" rel="noopener noreferrer">Joe Kirschvink (geophysicist)</a></strong> <span class="desc">— Experiments showing human brainwaves respond to magnetic field changes despite subjects reporting no conscious awareness</span> <a href="https://www.eneuro.org/content/6/2/ENEURO.0483-18.2019" target="_blank" rel="noopener noreferrer" class="study-link">[Paper]</a></li>
       <li><strong><a href="https://en.wikipedia.org/wiki/Cryptochrome" target="_blank" rel="noopener noreferrer">Cryptochrome</a></strong> <span class="desc">— Receptor protein in human eyes found in magnetically sensitive animals</span></li>
-      <li><strong><a href="https://en.wikipedia.org/wiki/David_Eagleman" target="_blank" rel="noopener noreferrer">David Eagleman / Neosensory</a></strong> <span class="desc">— Vest converting audio to vibrotactile patterns for deaf individuals</span></li>
-      <li><strong><a href="https://en.wikipedia.org/wiki/Paul_Bach-y-Rita" target="_blank" rel="noopener noreferrer">Paul Bach-y-Rita</a></strong> <span class="desc">— The BrainPort; grid of electrodes on tongue converting camera input to electrical pulses, enabling blind users to perceive vision</span></li>
-      <li><strong><a href="https://en.wikipedia.org/wiki/AlphaFold" target="_blank" rel="noopener noreferrer">DeepMind's AlphaFold</a></strong> <span class="desc">— Learned protein-folding structures human biologists could not have taught</span></li>
-      <li><strong><a href="https://en.wikipedia.org/wiki/AlphaGo" target="_blank" rel="noopener noreferrer">DeepMind's AlphaGo</a></strong> <span class="desc">— Discovered moves in Go no human had found in thousands of years</span></li>
+      <li><strong><a href="https://en.wikipedia.org/wiki/David_Eagleman" target="_blank" rel="noopener noreferrer">David Eagleman / Neosensory</a></strong> <span class="desc">— Vest converting audio to vibrotactile patterns for deaf individuals</span> <a href="https://eagleman.com/science/sensory-substitution/" target="_blank" rel="noopener noreferrer" class="study-link">[Project]</a></li>
+      <li><strong><a href="https://en.wikipedia.org/wiki/Paul_Bach-y-Rita" target="_blank" rel="noopener noreferrer">Paul Bach-y-Rita</a></strong> <span class="desc">— The BrainPort; grid of electrodes on tongue converting camera input to electrical pulses, enabling blind users to perceive vision</span> <a href="https://www.scientificamerican.com/article/device-lets-blind-see-with-tongues/" target="_blank" rel="noopener noreferrer" class="study-link">[Article]</a></li>
+      <li><strong><a href="https://en.wikipedia.org/wiki/AlphaFold" target="_blank" rel="noopener noreferrer">DeepMind's AlphaFold</a></strong> <span class="desc">— Learned protein-folding structures human biologists could not have taught</span> <a href="https://www.nature.com/articles/s41586-021-03819-2" target="_blank" rel="noopener noreferrer" class="study-link">[Paper]</a></li>
+      <li><strong><a href="https://en.wikipedia.org/wiki/AlphaGo" target="_blank" rel="noopener noreferrer">DeepMind's AlphaGo</a></strong> <span class="desc">— Discovered moves in Go no human had found in thousands of years</span> <a href="https://www.nature.com/articles/nature16961" target="_blank" rel="noopener noreferrer" class="study-link">[Paper]</a></li>
     </ul>
   </div>
 
@@ -507,21 +523,21 @@ body {
       The Machine Beneath the Machine
     </h2>
     <ul class="reference-list">
-      <li><strong><a href="https://en.wikipedia.org/wiki/Facebook_Files" target="_blank" rel="noopener noreferrer">Meta / Instagram internal research</a></strong> <span class="desc">— Platform making teenage girls feel worse about themselves was a feature of optimization</span></li>
-      <li><strong>Cigna</strong> <span class="desc">— Algorithms rejecting more than 300,000 insurance claims in two months</span></li>
+      <li><strong><a href="https://en.wikipedia.org/wiki/Facebook_Files" target="_blank" rel="noopener noreferrer">Meta / Instagram internal research</a></strong> <span class="desc">— Platform making teenage girls feel worse about themselves was a feature of optimization</span> <a href="https://en.wikipedia.org/wiki/2021_Facebook_leak" target="_blank" rel="noopener noreferrer" class="study-link">[Facebook Files]</a></li>
+      <li><strong>Cigna</strong> <span class="desc">— Algorithms rejecting more than 300,000 insurance claims in two months</span> <a href="https://www.propublica.org/article/cigna-pxdx-medical-health-insurance-rejection-claims" target="_blank" rel="noopener noreferrer" class="study-link">[Investigation]</a></li>
       <li><strong><a href="https://en.wikipedia.org/wiki/UnitedHealth_Group" target="_blank" rel="noopener noreferrer">UnitedHealth</a></strong> <span class="desc">— Automated insurance claim denials at scale</span></li>
       <li><strong><a href="https://en.wikipedia.org/wiki/Insulin" target="_blank" rel="noopener noreferrer">Insulin</a></strong> <span class="desc">— Discovered in 1921 at a dollar per vial; now costs hundreds per month</span></li>
-      <li><strong><a href="https://en.wikipedia.org/wiki/RealPage" target="_blank" rel="noopener noreferrer">RealPage</a></strong> <span class="desc">— Alleged coordinated rent hikes across competing properties</span></li>
+      <li><strong><a href="https://en.wikipedia.org/wiki/RealPage" target="_blank" rel="noopener noreferrer">RealPage</a></strong> <span class="desc">— Alleged coordinated rent hikes across competing properties</span> <a href="https://www.propublica.org/article/yieldstar-rent-increase-realpage-rent" target="_blank" rel="noopener noreferrer" class="study-link">[Investigation]</a></li>
       <li><strong><a href="https://en.wikipedia.org/wiki/Clearview_AI" target="_blank" rel="noopener noreferrer">Clearview AI</a></strong> <span class="desc">— Scraped billions of photos from public internet for facial recognition</span></li>
       <li><strong><a href="https://en.wikipedia.org/wiki/Ring_(company)" target="_blank" rel="noopener noreferrer">Amazon Ring</a></strong> <span class="desc">— Consumer surveillance network partnered with police</span></li>
       <li><strong><a href="https://en.wikipedia.org/wiki/Anduril_Industries" target="_blank" rel="noopener noreferrer">Anduril</a></strong> <span class="desc">— Building autonomous weapons systems</span></li>
       <li><strong><a href="https://en.wikipedia.org/wiki/Project_Maven" target="_blank" rel="noopener noreferrer">Project Maven</a></strong> <span class="desc">— U.S. military AI targeting system</span></li>
       <li><strong><a href="https://en.wikipedia.org/wiki/Palantir_Technologies" target="_blank" rel="noopener noreferrer">Palantir</a></strong> <span class="desc">— Infrastructure for ICE deportation, predictive policing, healthcare contracts, and Project Maven</span></li>
       <li><strong>Minab elementary school airstrike (March 2026)</strong> <span class="desc">— 175 killed, most children, struck using Project Maven based on decade-old intelligence</span></li>
-      <li><strong><a href="https://en.wikipedia.org/wiki/Lavender_(AI)" target="_blank" rel="noopener noreferrer">The Lavender system (Gaza)</a></strong> <span class="desc">— Israeli officer: "I would invest 20 seconds for each target, and do dozens of them every day. I had zero added value as a human."</span></li>
+      <li><strong><a href="https://en.wikipedia.org/wiki/Lavender_(AI)" target="_blank" rel="noopener noreferrer">The Lavender system (Gaza)</a></strong> <span class="desc">— Israeli officer: "I would invest 20 seconds for each target, and do dozens of them every day. I had zero added value as a human."</span> <a href="https://www.972mag.com/lavender-ai-israeli-army-gaza/" target="_blank" rel="noopener noreferrer" class="study-link">[Investigation]</a></li>
       <li><strong><a href="https://en.wikipedia.org/wiki/Richard_Lewontin" target="_blank" rel="noopener noreferrer">Richard Lewontin</a></strong> <span class="desc">— Formal conditions for natural selection: variation, heritability, differential fitness</span></li>
-      <li><strong>Fudan University</strong> <span class="desc">— Documented AI models capable of fully replicating themselves</span></li>
-      <li><strong><a href="https://en.wikipedia.org/wiki/Federalist_No._51" target="_blank" rel="noopener noreferrer">James Madison / Federalist No. 51 (1788)</a></strong> <span class="desc">— "Ambition must be made to counteract ambition"</span></li>
+      <li><strong>Fudan University</strong> <span class="desc">— Documented AI models capable of fully replicating themselves</span> <a href="https://arxiv.org/abs/2412.12140" target="_blank" rel="noopener noreferrer" class="study-link">[Paper]</a></li>
+      <li><strong><a href="https://en.wikipedia.org/wiki/Federalist_No._51" target="_blank" rel="noopener noreferrer">James Madison / Federalist No. 51 (1788)</a></strong> <span class="desc">— "Ambition must be made to counteract ambition"</span> <a href="https://avalon.law.yale.edu/18th_century/fed51.asp" target="_blank" rel="noopener noreferrer" class="study-link">[Full Text]</a></li>
       <li><strong><a href="https://en.wikipedia.org/wiki/Articles_of_Confederation" target="_blank" rel="noopener noreferrer">The Articles of Confederation</a></strong> <span class="desc">— First attempt at distributed power that nearly collapsed</span></li>
       <li><strong><a href="https://en.wikipedia.org/wiki/Marshall_Plan" target="_blank" rel="noopener noreferrer">The Marshall Plan</a></strong> <span class="desc">— Post-WWII; required European cooperation, revolving funds; by 1952 every participant surpassed pre-war output</span></li>
       <li><strong><a href="https://en.wikipedia.org/wiki/FONAFIFO" target="_blank" rel="noopener noreferrer">Costa Rica / FONAFIFO</a></strong> <span class="desc">— Redesigned incentive structure for forest preservation; forest cover from ~21% (1980s) to >50% (2025)</span></li>
