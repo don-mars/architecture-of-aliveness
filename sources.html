@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sources & References — The Architecture of Aliveness</title>
+<meta name="description" content="Every person, study, book, experiment, and historical event referenced in The Architecture of Aliveness by Marshall Donnelly.">
+<meta property="og:title" content="Sources & References — The Architecture of Aliveness">
+<meta property="og:description" content="Every person, study, book, experiment, and historical event referenced in the essay.">
+<meta property="og:type" content="article">
+<meta property="article:author" content="Marshall Donnelly">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 18px;
+}
+
+body {
+  background-color: #faf8f0;
+  color: #2c2c2c;
+  font-family: 'EB Garamond', Georgia, 'Times New Roman', serif;
+  line-height: 1.85;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.content-wrapper {
+  max-width: 660px;
+  margin: 0 auto;
+  padding: 0 2rem 6rem;
+}
+
+/* Header */
+.page-header {
+  padding: 5rem 0 3rem;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 2.8rem;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  margin-bottom: 0.8rem;
+  color: #1a1a1a;
+}
+
+.page-header .subtitle {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #5a5a5a;
+  margin-bottom: 2rem;
+  letter-spacing: 0.02em;
+}
+
+.title-ornament {
+  width: 120px;
+  height: 1px;
+  background-color: #c9a84c;
+  margin: 0 auto 2rem;
+  position: relative;
+}
+
+.title-ornament::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 5px;
+  background-color: #c9a84c;
+  border-radius: 50%;
+}
+
+/* Back link */
+.back-link {
+  display: inline-block;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #999;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  margin-bottom: 1rem;
+}
+
+.back-link:hover {
+  color: #c9a84c;
+}
+
+.back-link-top {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.back-link-bottom {
+  text-align: center;
+  margin-top: 4rem;
+  padding-top: 3rem;
+  border-top: 1px solid #e0dcd0;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 3.5rem;
+}
+
+.section-heading {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e0dcd0;
+  line-height: 1.3;
+}
+
+.section-heading .section-num {
+  color: #999;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+
+/* Reference entries */
+.reference-list {
+  list-style: none;
+  padding: 0;
+}
+
+.reference-list li {
+  margin-bottom: 1.1rem;
+  padding-left: 0;
+}
+
+.reference-list li strong {
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.reference-list li .desc {
+  color: #4a4a4a;
+  font-size: 0.95rem;
+}
+
+.no-sources {
+  font-style: italic;
+  color: #888;
+  font-size: 0.95rem;
+}
+
+/* Divider */
+.divider {
+  text-align: center;
+  margin: 4rem 0;
+  color: #c9a84c;
+  letter-spacing: 0.8em;
+  font-size: 0.8rem;
+  user-select: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+
+  .page-header h1 {
+    font-size: 2.1rem;
+  }
+
+  .page-header .subtitle {
+    font-size: 1.05rem;
+  }
+
+  .content-wrapper {
+    padding: 0 1.25rem 4rem;
+  }
+
+  .section-heading {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .page-header .subtitle {
+    font-size: 0.95rem;
+  }
+}
+
+/* Selection color */
+::selection {
+  background-color: rgba(201, 168, 76, 0.2);
+}
+
+::-moz-selection {
+  background-color: rgba(201, 168, 76, 0.2);
+}
+</style>
+</head>
+<body>
+
+<div class="content-wrapper">
+
+  <!-- Back to Essay (top) -->
+  <div class="back-link-top">
+    <a href="index.html" class="back-link">&larr; Back to Essay</a>
+  </div>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <h1>Sources & References</h1>
+    <p class="subtitle">Every person, study, book, experiment, and historical event referenced in the essay.</p>
+    <div class="title-ornament"></div>
+  </header>
+
+  <!-- I. The First Spark -->
+  <div class="section">
+    <h2 class="section-heading">
+      <span class="section-num">I.</span>
+      The First Spark
+    </h2>
+    <p class="no-sources">No specific named sources. General cosmology and physics.</p>
+  </div>
+
+  <!-- II. The Spiral -->
+  <div class="section">
+    <h2 class="section-heading">
+      <span class="section-num">II.</span>
+      The Spiral
+    </h2>
+    <ul class="reference-list">
+      <li><strong>The Islamic Golden Age</strong> <span class="desc">— Referenced as an acceleration that brilliantly advanced and then stalled</span></li>
+      <li><strong>The Song Dynasty</strong> <span class="desc">— Innovations that never cascaded into industrial revolution</span></li>
+    </ul>
+  </div>
+
+  <!-- III. The Fear That Follows -->
+  <div class="section">
+    <h2 class="section-heading">
+      <span class="section-num">III.</span>
+      The Fear That Follows
+    </h2>
+    <ul class="reference-list">
+      <li><strong>Socrates</strong> <span class="desc">— Argued that writing would erode memory; recorded by Plato</span></li>
+      <li><strong>Plato</strong> <span class="desc">— Wrote down Socrates' objections to writing (Phaedrus)</span></li>
+      <li><strong>Johannes Gutenberg</strong> <span class="desc">— Printing press, circa 1440</span></li>
+      <li><strong>The Catholic Church</strong> <span class="desc">— Attempted to control print for centuries</span></li>
+      <li><strong>The Reformation</strong> <span class="desc">— Fueled by unrestricted circulation of ideas via the press</span></li>
+      <li><strong>The Thirty Years' War</strong> <span class="desc">— Killed a third of the population of Central Europe</span></li>
+      <li><strong>The Luddite movement</strong> <span class="desc">— Organized attacks on factories across England, beginning around 1760</span></li>
+      <li><strong>Duke of Wellington</strong> <span class="desc">— Referenced for comparison: 12,000 troops against Luddites exceeded Wellington's force into Portugal</span></li>
+      <li><strong>Hiroshima and Nagasaki</strong> <span class="desc">— Demonstrated that human ingenuity could end civilization</span></li>
+      <li><strong>Las Vegas as "Atomic City"</strong> <span class="desc">— Tourists watched nuclear tests as entertainment</span></li>
+    </ul>
+  </div>
+
+  <!-- IV. Reading History Backwards -->
+  <div class="section">
+    <h2 class="section-heading">
+      <span class="section-num">IV.</span>
+      Reading History Backwards
+    </h2>
+    <p class="no-sources">No new named sources beyond those already referenced.</p>
+  </div>
+
+  <div class="divider">&#8226; &#8226; &#8226;</div>
+
+  <!-- V. The Devil You Know -->
+  <div class="section">
+    <h2 class="section-heading">
+      <span class="section-num">V.</span>
+      The Devil You Know
+    </h2>
+    <ul class="reference-list">
+      <li><strong>John Milton</strong> <span class="desc">— Paradise Lost; gave the devil eloquence and tragic grandeur</span></li>
+      <li><strong>Dante Alighieri</strong> <span class="desc">— Divine Comedy / Inferno; froze the devil at the center of hell</span></li>
+      <li><strong>Zoroastrianism</strong> <span class="desc">— Ahura Mazda vs. Angra Mainyu; dualism as equally real opposing forces</span></li>
+      <li><strong>Saint Augustine</strong> <span class="desc">— Evil as the absence or corruption of good (privation theory)</span></li>
+      <li><strong>Friedrich Nietzsche</strong> <span class="desc">— Good and evil as human constructions reflecting power</span></li>
+      <li><strong>Hannah Arendt</strong> <span class="desc">— Coined "the banality of evil" observing the trial of Adolf Eichmann</span></li>
+      <li><strong>Adolf Eichmann</strong> <span class="desc">— Nazi bureaucrat whose trial Arendt observed</span></li>
+      <li><strong>Carl Jung</strong> <span class="desc">— The "shadow"; moral maturity through integrating darkness</span></li>
+      <li><strong>The Milgram experiments</strong> <span class="desc">— Ordinary people committing harmful acts under authority pressure</span></li>
+      <li><strong>The Stanford prison study</strong> <span class="desc">— Situational pressures leading ordinary people to harmful acts</span></li>
+      <li><strong>Isaiah Berlin</strong> <span class="desc">— Value pluralism; genuine moral goods can conflict without resolution</span></li>
+      <li><strong>The French Revolution</strong> <span class="desc">— Arc from the Declaration of the Rights of Man to the Terror</span></li>
+    </ul>
+  </div>
+
+  <!-- VI. The Stories We Tell Ourselves -->
+  <div class="section">
+    <h2 class="section-heading">
+      <span class="section-num">VI.</span>
+      The Stories We Tell Ourselves
+    </h2>
+    <ul class="reference-list">
+      <li><strong>Sigmund Freud</strong> <span class="desc">— Conscious reasoning as post-hoc justification for deeper decisions</span></li>
+      <li><strong>Carl Jung</strong> <span class="desc">— Same context as Freud on unconscious motivation</span></li>
+      <li><strong>The Green Revolution</strong> <span class="desc">— Fed billions and degraded topsoils worldwide</span></li>
+      <li><strong>Isaiah Berlin</strong> <span class="desc">— Value pluralism (referenced again)</span></li>
+      <li><strong>Theodor Adorno and Max Horkheimer</strong> <span class="desc">— The culture industry (1940s); mass-produced cultural goods standardizing experience</span></li>
+    </ul>
+  </div>
+
+  <!-- VII. Uniformity and Aliveness -->
+  <div class="section">
+    <h2 class="section-heading">
+      <span class="section-num">VII.</span>
+      Uniformity and Aliveness
+    </h2>
+    <ul class="reference-list">
+      <li><strong>Lois Lowry, <em>The Giver</em></strong> <span class="desc">— Novel depicting a society that eliminated suffering and achieved uniformity, not order</span></li>
+    </ul>
+  </div>
+
+  <div class="divider">&#8226; &#8226; &#8226;</div>
+
+  <!-- VIII. Neurons in a Dish -->
+  <div class="section">
+    <h2 class="section-heading">
+      <span class="section-num">VIII.</span>
+      Neurons in a Dish
+    </h2>
+    <ul class="reference-list">
+      <li><strong>Cortical Labs (Melbourne, 2022)</strong> <span class="desc">— Grew ~800,000 neurons on silicon; the DishBrain system learned Pong in five minutes</span></li>
+      <li><strong>Karl Friston</strong> <span class="desc">— Free energy principle; neurons minimize unpredictability in their environment</span></li>
+      <li><strong>Cortical Labs (by 2026)</strong> <span class="desc">— Neurons playing Doom; open API for biological computing</span></li>
+      <li><strong>Eon Systems</strong> <span class="desc">— Built a computational model from the FlyWire connectome</span></li>
+      <li><strong>The FlyWire connectome</strong> <span class="desc">— Complete wiring diagram of an adult fruit fly brain: ~125,000 neurons, ~50 million synaptic connections, mapped from 7,000 slices of electron microscopy</span></li>
+      <li><strong>David Hubel and Torsten Wiesel</strong> <span class="desc">— Nobel Prize for demonstrating hierarchical feature detection in the cat visual cortex</span></li>
+      <li><strong>Donald Hebb</strong> <span class="desc">— "Neurons that fire together wire together"; Hebbian learning</span></li>
+      <li><strong>Transformer architecture attention mechanisms</strong> <span class="desc">— Artificial analog to the biological thalamus</span></li>
+    </ul>
+  </div>
+
+  <!-- IX. The Permeable Self -->
+  <div class="section">
+    <h2 class="section-heading">
+      <span class="section-num">IX.</span>
+      The Permeable Self
+    </h2>
+    <ul class="reference-list">
+      <li><strong>Uri Hasson (Princeton)</strong> <span class="desc">— Brain scanner study showing listener neural activity mirrors and anticipates speaker's patterns</span></li>
+      <li><strong>Gut bacteria transplant study</strong> <span class="desc">— Transplanting gut bacteria from anxious mice into calm ones made them anxious</span></li>
+      <li><strong>Epigenetic transmission research</strong> <span class="desc">— Stress responses and trauma passing across generations through gene expression</span></li>
+      <li><strong>Holocaust survivors' descendants</strong> <span class="desc">— Measurable differences in cortisol regulation</span></li>
+      <li><strong>Famine survivors' descendants</strong> <span class="desc">— Altered metabolic responses to scarcity</span></li>
+    </ul>
+  </div>
+
+  <!-- X. The Convergence Question -->
+  <div class="section">
+    <h2 class="section-heading">
+      <span class="section-num">X.</span>
+      The Convergence Question
+    </h2>
+    <ul class="reference-list">
+      <li><strong>The Dalai Lama</strong> <span class="desc">— Engaged formally with physicists through the Mind and Life Institute since 1987</span></li>
+      <li><strong>The Mind and Life Institute (1987)</strong> <span class="desc">— Structured scholarly dialogue between Buddhist contemplatives and physicists</span></li>
+      <li><strong>The Dalai Lama's quote</strong> <span class="desc">— "If on the quantum level, matter is revealed to be less solid and definable than it appears, then it seems to me that science is coming closer to the Buddhist contemplative insights of emptiness and interdependence."</span></li>
+      <li><strong>Johns Hopkins psilocybin research</strong> <span class="desc">— Brain imaging showed reduced activity in the claustrum; >70% reported complete mystical experiences; 67% rated it among five most spiritually significant at 14-month follow-up</span></li>
+    </ul>
+  </div>
+
+  <div class="divider">&#8226; &#8226; &#8226;</div>
+
+  <!-- XI. The Grooves of Thought -->
+  <div class="section">
+    <h2 class="section-heading">
+      <span class="section-num">XI.</span>
+      The Grooves of Thought
+    </h2>
+    <ul class="reference-list">
+      <li><strong>Charles Darwin and Alfred Russel Wallace</strong> <span class="desc">— Arrived at natural selection independently and simultaneously</span></li>
+      <li><strong>Gottfried Wilhelm Leibniz and Isaac Newton</strong> <span class="desc">— Developed calculus independently in parallel</span></li>
+      <li><strong>Elisha Gray and Alexander Graham Bell</strong> <span class="desc">— Filed telephone patents the same day</span></li>
+      <li><strong>The pentatonic scale</strong> <span class="desc">— Appearing independently in West African kora music, Chinese folk melody, and Appalachian banjo</span></li>
+      <li><strong>The golden ratio</strong> <span class="desc">— In the Parthenon, Renaissance painting, and the nautilus shell</span></li>
+      <li><strong>Carl Jung</strong> <span class="desc">— Archetypes and the collective unconscious</span></li>
+      <li><strong>Apophenia</strong> <span class="desc">— The tendency to perceive meaningful relationships between unrelated things</span></li>
+      <li><strong>The Guugu Yimithirr people (Australia)</strong> <span class="desc">— Navigate by absolute cardinal direction at all times; spatial cognition measurably different from speakers of relative-direction languages</span></li>
+      <li><strong>Theodor Adorno and Max Horkheimer</strong> <span class="desc">— The culture industry (referenced again)</span></li>
+    </ul>
+  </div>
+
+  <!-- XII. The Training Problem -->
+  <div class="section">
+    <h2 class="section-heading">
+      <span class="section-num">XII.</span>
+      The Training Problem
+    </h2>
+    <ul class="reference-list">
+      <li><strong>Chetan Prakash, Donald Hoffman, et al. (2020)</strong> <span class="desc">— Formally proved the Fitness-Beats-Truth theorem using evolutionary game theory and Bayesian decision theory</span></li>
+      <li><strong>David Eagleman</strong> <span class="desc">— The Umwelt; perceptual confinement defined by sensory apparatus</span></li>
+      <li><strong>Jakob von Uexk&uuml;ll</strong> <span class="desc">— Originated the Umwelt concept (not named in essay but worth crediting)</span></li>
+      <li><strong>Joe Kirschvink (geophysicist)</strong> <span class="desc">— Experiments showing human brainwaves respond to magnetic field changes despite subjects reporting no conscious awareness</span></li>
+      <li><strong>Cryptochrome</strong> <span class="desc">— Receptor protein in human eyes found in magnetically sensitive animals</span></li>
+      <li><strong>David Eagleman / Neosensory</strong> <span class="desc">— Vest converting audio to vibrotactile patterns for deaf individuals</span></li>
+      <li><strong>Paul Bach-y-Rita</strong> <span class="desc">— The BrainPort; grid of electrodes on tongue converting camera input to electrical pulses, enabling blind users to perceive vision</span></li>
+      <li><strong>DeepMind's AlphaFold</strong> <span class="desc">— Learned protein-folding structures human biologists could not have taught</span></li>
+      <li><strong>DeepMind's AlphaGo</strong> <span class="desc">— Discovered moves in Go no human had found in thousands of years</span></li>
+    </ul>
+  </div>
+
+  <div class="divider">&#8226; &#8226; &#8226;</div>
+
+  <!-- XIII. The Machine Beneath the Machine -->
+  <div class="section">
+    <h2 class="section-heading">
+      <span class="section-num">XIII.</span>
+      The Machine Beneath the Machine
+    </h2>
+    <ul class="reference-list">
+      <li><strong>Meta / Instagram internal research</strong> <span class="desc">— Platform making teenage girls feel worse about themselves was a feature of optimization</span></li>
+      <li><strong>Cigna</strong> <span class="desc">— Algorithms rejecting more than 300,000 insurance claims in two months</span></li>
+      <li><strong>UnitedHealth</strong> <span class="desc">— Automated insurance claim denials at scale</span></li>
+      <li><strong>Insulin</strong> <span class="desc">— Discovered in 1921 at a dollar per vial; now costs hundreds per month</span></li>
+      <li><strong>RealPage</strong> <span class="desc">— Alleged coordinated rent hikes across competing properties</span></li>
+      <li><strong>Clearview AI</strong> <span class="desc">— Scraped billions of photos from public internet for facial recognition</span></li>
+      <li><strong>Amazon Ring</strong> <span class="desc">— Consumer surveillance network partnered with police</span></li>
+      <li><strong>Anduril</strong> <span class="desc">— Building autonomous weapons systems</span></li>
+      <li><strong>Project Maven</strong> <span class="desc">— U.S. military AI targeting system</span></li>
+      <li><strong>Palantir</strong> <span class="desc">— Infrastructure for ICE deportation, predictive policing, healthcare contracts, and Project Maven</span></li>
+      <li><strong>Minab elementary school airstrike (March 2026)</strong> <span class="desc">— 175 killed, most children, struck using Project Maven based on decade-old intelligence</span></li>
+      <li><strong>The Lavender system (Gaza)</strong> <span class="desc">— Israeli officer: "I would invest 20 seconds for each target, and do dozens of them every day. I had zero added value as a human."</span></li>
+      <li><strong>Richard Lewontin</strong> <span class="desc">— Formal conditions for natural selection: variation, heritability, differential fitness</span></li>
+      <li><strong>Fudan University</strong> <span class="desc">— Documented AI models capable of fully replicating themselves</span></li>
+      <li><strong>James Madison / Federalist No. 51 (1788)</strong> <span class="desc">— "Ambition must be made to counteract ambition"</span></li>
+      <li><strong>The Articles of Confederation</strong> <span class="desc">— First attempt at distributed power that nearly collapsed</span></li>
+      <li><strong>The Marshall Plan</strong> <span class="desc">— Post-WWII; required European cooperation, revolving funds; by 1952 every participant surpassed pre-war output</span></li>
+      <li><strong>Costa Rica / FONAFIFO</strong> <span class="desc">— Redesigned incentive structure for forest preservation; forest cover from ~21% (1980s) to >50% (2025)</span></li>
+      <li><strong>Wikipedia</strong> <span class="desc">— Largest encyclopedia in human history, no monetary incentives</span></li>
+      <li><strong>Nupedia</strong> <span class="desc">— Wikipedia's predecessor; traditional peer review produced 21 articles in its first year</span></li>
+    </ul>
+  </div>
+
+  <!-- XIV. The Fear That Teaches and the Fear That Blinds -->
+  <div class="section">
+    <h2 class="section-heading">
+      <span class="section-num">XIV.</span>
+      The Fear That Teaches and the Fear That Blinds
+    </h2>
+    <ul class="reference-list">
+      <li><strong>Hans Jonas</strong> <span class="desc">— The heuristic of fear; learning to fear the future as a moral requirement and categorical imperative</span></li>
+    </ul>
+  </div>
+
+  <!-- XV. Through It -->
+  <div class="section">
+    <h2 class="section-heading">
+      <span class="section-num">XV.</span>
+      Through It
+    </h2>
+    <ul class="reference-list">
+      <li><strong>Wendell Berry</strong> <span class="desc">— Poet, novelist, essayist, farmer; left New York literary career in 1965 for Kentucky; fifty books arguing modernity's error is scale; radical localism</span></li>
+      <li><strong>Alex Karp</strong> <span class="desc">— Doctorate in critical theory under J&uuml;rgen Habermas; co-founded Palantir; chose implication over critique</span></li>
+      <li><strong>J&uuml;rgen Habermas</strong> <span class="desc">— Inheritor of the Frankfurt School tradition; life's work is the critique of instrumental reason</span></li>
+      <li><strong>Larry Ellison</strong> <span class="desc">— Publicly mused about AI-enabled surveillance keeping populations "on their best behavior"</span></li>
+      <li><strong>Karl Marx</strong> <span class="desc">— "Right about the structural critiques of capitalism and power"</span></li>
+      <li><strong>The Frankfurt School</strong> <span class="desc">— Elaborated critiques into descriptions of the modern condition</span></li>
+    </ul>
+  </div>
+
+  <div class="divider">&#8226; &#8226; &#8226;</div>
+
+  <!-- XVI. The Architecture of What We Are -->
+  <div class="section">
+    <h2 class="section-heading">
+      <span class="section-num">XVI.</span>
+      The Architecture of What We Are
+    </h2>
+    <ul class="reference-list">
+      <li><strong>Aleksandr Solzhenitsyn</strong> <span class="desc">— "The line between good and evil runs not between nations, not between classes, not between species and their creations — but through every heart complex enough to contain the contradiction" (The Gulag Archipelago)</span></li>
+      <li><strong>Plato</strong> <span class="desc">— Allegory of the Cave (The Republic)</span></li>
+    </ul>
+  </div>
+
+  <!-- Back to Essay (bottom) -->
+  <div class="back-link-bottom">
+    <a href="index.html" class="back-link">&larr; Back to Essay</a>
+  </div>
+
+</div>
+
+</body>
+</html>
