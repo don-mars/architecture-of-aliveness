@@ -420,6 +420,28 @@ body {
 ::-moz-selection {
   background-color: rgba(201, 168, 76, 0.2);
 }
+
+.infographic {
+  margin: 3rem 0;
+  padding: 2rem 0;
+  border-top: 1px solid #e8e4d8;
+  border-bottom: 1px solid #e8e4d8;
+}
+
+.infographic svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.infographic figcaption {
+  text-align: center;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #888;
+  margin-top: 1rem;
+}
 </style>
 </head>
 <body>
@@ -500,6 +522,71 @@ body {
     <p>What you just felt has a shape. A pattern that established itself at the very origin of complexity and has been repeating at every scale since. Chaos organizes into complexity&mdash;and with that complexity emerges new capacity that creates a new plane of chaos for the cycle to repeat. A hydrogen cloud is one kind of chaos. Gravity organizes it into a star. The star&rsquo;s own complexity&mdash;nuclear fusion, plasma dynamics, magnetic fields&mdash;generates a chaos that no hydrogen cloud could have produced. The supernova that follows scatters newly forged elements across light-years, seeding a new plane of chaos from which the next order of complexity can emerge. The capacity released by fusion creates the chemical conditions for planets, which create the conditions for chemistry, which create the conditions for biology. And each time the cycle completes, it accelerates&mdash;because complexity, as a byproduct of its own organization, produces capacity: the ability to affect, alter, and further complicate its environment. Capacity needs complexity to exist. And for complexity to emerge, something had to have the capacity to complicate. Neither causes the other in a simple linear way. They co-produce each other in a feedback loop that, once initiated, only deepens&mdash;because each cycle&rsquo;s output becomes the next cycle&rsquo;s input, and each input is richer than the last.</p>
     <p>There is something quietly staggering about this. Not the physics&mdash;the physics is well established&mdash;but the shape of it. That the universe, starting from almost nothing, built a ratchet into its own structure&mdash;whether by design, by accident, or by some principle we do not yet have language for. And that ratchet has been turning for 13.8 billion years, producing things of increasing intricacy and increasing power, with no indication that it intends to stop. We are not watching this process from outside. We are the process, watching itself.</p>
     <p>The universe spent roughly nine billion years getting from hydrogen to a planet with the right chemistry. Life took another billion years to get from single cells to multicellular organisms. Five hundred million more to get from complex sea creatures to mammals. Sixty million from early mammals to primates. A few million from primates to hominids. A few hundred thousand to anatomically modern humans. Seventy thousand years from the cognitive revolution&mdash;the emergence of language and symbolic thought&mdash;to agriculture. Then six thousand years to writing. Forty-eight hundred years to the printing press. A hundred years to the Scientific Revolution. Sixty to the Industrial Revolution. Thirty to the Second Industrial Revolution. Thirty more to the Atomic Age. Twenty-five to the Digital Revolution. Twenty to artificial intelligence.</p>
+    <figure class="infographic">
+      <svg viewBox="0 0 600 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Compression Timeline: intervals between major transitions keep shortening">
+        <!-- Row 1: Hydrogen → rocky planets | 9 billion years -->
+        <text x="0" y="10" font-size="10" fill="#2c2c2c" font-family="inherit">Hydrogen → rocky planets</text>
+        <rect x="0" y="14" width="520" height="16" fill="#c9a84c" opacity="0.6" rx="2"/>
+        <text x="525" y="26" font-size="10" fill="#888" font-family="inherit">9 billion years</text>
+        <!-- Row 2: Single cells → multicellular | 1 billion -->
+        <text x="0" y="44" font-size="10" fill="#2c2c2c" font-family="inherit">Single cells → multicellular</text>
+        <rect x="0" y="48" width="470" height="16" fill="#c9a84c" opacity="0.6" rx="2"/>
+        <text x="475" y="60" font-size="10" fill="#888" font-family="inherit">1 billion</text>
+        <!-- Row 3: Sea creatures → mammals | 500 million -->
+        <text x="0" y="78" font-size="10" fill="#2c2c2c" font-family="inherit">Sea creatures → mammals</text>
+        <rect x="0" y="82" width="455" height="16" fill="#c9a84c" opacity="0.6" rx="2"/>
+        <text x="460" y="94" font-size="10" fill="#888" font-family="inherit">500 million</text>
+        <!-- Row 4: Early mammals → primates | 60 million -->
+        <text x="0" y="112" font-size="10" fill="#2c2c2c" font-family="inherit">Early mammals → primates</text>
+        <rect x="0" y="116" width="407" height="16" fill="#c9a84c" opacity="0.6" rx="2"/>
+        <text x="412" y="128" font-size="10" fill="#888" font-family="inherit">60 million</text>
+        <!-- Row 5: Primates → hominids | 4 million -->
+        <text x="0" y="146" font-size="10" fill="#2c2c2c" font-family="inherit">Primates → hominids</text>
+        <rect x="0" y="150" width="345" height="16" fill="#c9a84c" opacity="0.6" rx="2"/>
+        <text x="350" y="162" font-size="10" fill="#888" font-family="inherit">4 million</text>
+        <!-- Row 6: → Modern humans | 300,000 -->
+        <text x="0" y="180" font-size="10" fill="#2c2c2c" font-family="inherit">→ Modern humans</text>
+        <rect x="0" y="184" width="286" height="16" fill="#c9a84c" opacity="0.6" rx="2"/>
+        <text x="291" y="196" font-size="10" fill="#888" font-family="inherit">300,000</text>
+        <!-- Row 7: Cognitive rev → agriculture | 70,000 -->
+        <text x="0" y="214" font-size="10" fill="#2c2c2c" font-family="inherit">Cognitive rev → agriculture</text>
+        <rect x="0" y="218" width="253" height="16" fill="#c9a84c" opacity="0.6" rx="2"/>
+        <text x="258" y="230" font-size="10" fill="#888" font-family="inherit">70,000</text>
+        <!-- Row 8: → Writing | 6,000 -->
+        <text x="0" y="248" font-size="10" fill="#2c2c2c" font-family="inherit">→ Writing</text>
+        <rect x="0" y="252" width="197" height="16" fill="#c9a84c" opacity="0.6" rx="2"/>
+        <text x="202" y="264" font-size="10" fill="#888" font-family="inherit">6,000</text>
+        <!-- Row 9: → Printing press | 4,800 -->
+        <text x="0" y="282" font-size="10" fill="#2c2c2c" font-family="inherit">→ Printing press</text>
+        <rect x="0" y="286" width="192" height="16" fill="#c9a84c" opacity="0.6" rx="2"/>
+        <text x="197" y="298" font-size="10" fill="#888" font-family="inherit">4,800</text>
+        <!-- Row 10: → Scientific Revolution | 100 -->
+        <text x="0" y="316" font-size="10" fill="#2c2c2c" font-family="inherit">→ Scientific Revolution</text>
+        <rect x="0" y="320" width="105" height="16" fill="#c9a84c" opacity="0.6" rx="2"/>
+        <text x="110" y="332" font-size="10" fill="#888" font-family="inherit">100</text>
+        <!-- Row 11: → Industrial Revolution | 60 -->
+        <text x="0" y="350" font-size="10" fill="#2c2c2c" font-family="inherit">→ Industrial Revolution</text>
+        <rect x="0" y="354" width="93" height="16" fill="#c9a84c" opacity="0.6" rx="2"/>
+        <text x="98" y="366" font-size="10" fill="#888" font-family="inherit">60</text>
+        <!-- Row 12: → 2nd Industrial Rev | 30 -->
+        <text x="0" y="384" font-size="10" fill="#2c2c2c" font-family="inherit">→ 2nd Industrial Rev</text>
+        <rect x="0" y="388" width="77" height="16" fill="#c9a84c" opacity="0.6" rx="2"/>
+        <text x="82" y="400" font-size="10" fill="#888" font-family="inherit">30</text>
+        <!-- Row 13: → Atomic Age | 30 -->
+        <text x="0" y="418" font-size="10" fill="#2c2c2c" font-family="inherit">→ Atomic Age</text>
+        <rect x="0" y="422" width="77" height="16" fill="#c9a84c" opacity="0.6" rx="2"/>
+        <text x="82" y="434" font-size="10" fill="#888" font-family="inherit">30</text>
+        <!-- Row 14: → Digital Revolution | 25 -->
+        <text x="0" y="452" font-size="10" fill="#2c2c2c" font-family="inherit">→ Digital Revolution</text>
+        <rect x="0" y="456" width="73" height="16" fill="#c9a84c" opacity="0.6" rx="2"/>
+        <text x="78" y="468" font-size="10" fill="#888" font-family="inherit">25</text>
+        <!-- Row 15: → Artificial intelligence | 20 years -->
+        <text x="0" y="486" font-size="10" fill="#2c2c2c" font-family="inherit">→ Artificial intelligence</text>
+        <rect x="0" y="490" width="68" height="16" fill="#c9a84c" opacity="0.6" rx="2"/>
+        <text x="73" y="502" font-size="10" fill="#888" font-family="inherit">20 years</text>
+      </svg>
+      <figcaption>The intervals keep shortening.</figcaption>
+    </figure>
     <p>A note of honesty about this timeline: it is a lens, not a law. It selects the transitions that fit the curve and necessarily omits the ones that complicate it&mdash;the long stasis periods within civilizations, the Islamic Golden Age that accelerated brilliantly and then stalled, the Song Dynasty&rsquo;s innovations that never cascaded into industrial revolution. History is messier than any single arc can capture, and treating the acceleration as monotonic would be intellectually dishonest. But as a mental exercise&mdash;a way of grasping scale, proportion, and the potential trajectory of self-organizing systems&mdash;the pattern is useful precisely because of what it reveals when you stand far enough back. Up close, the terrain is rough and irregular. From altitude, the curve becomes visible. And the curve suggests something worth paying attention to.</p>
     <p>Each new layer of complexity creates the conditions for the next layer to emerge faster than the last. Stars made elements. Elements made chemistry. Chemistry made biology. Biology made brains. Brains made language. Language made culture. Culture made technology. Technology made AI. And AI might make whatever comes next&mdash;at a speed that compresses what previously took millennia into months, or weeks, or less.</p>
     <p>A note of caution about that &ldquo;might.&rdquo; The trajectory of several converging technologies&mdash;artificial intelligence, biotechnology, materials science, energy systems&mdash;is steep and shows no clear signs of leveling off. In some domains, the tools themselves are beginning to accelerate the research that produces the next generation of tools, creating exactly the kind of feedback loop the spiral describes. But calling this trajectory inevitable would be exactly the kind of certainty this essay warns against. There are real potential plateaus, real bottlenecks, real possibilities that the curve flattens. What can be said honestly is this: the conditions for sustained acceleration are present, the early evidence supports it, and anyone planning for the future as though this is going to level off soon is probably making a bad bet. But it is still a bet, not a prophecy.</p>
@@ -715,6 +802,51 @@ body {
     <p>Our senses are accurate for the physical world we evolved in&mdash;predators, terrain, weather, faces, ripe fruit. We had millions of years of selection pressure shaping us for that environment. But the world we actually navigate now is drastically different from the one that shaped us. Social organization scaled from tribes of a hundred and fifty to nations of hundreds of millions, and we have deep intuitive wiring for small-group trust and reciprocity but almost nothing for navigating bureaucracies or anonymous digital interaction with strangers. The information environment went from direct sensory experience to a firehose of algorithmically curated content, and we evolved to assess credibility by looking someone in the eye, not by reading headlines on a screen. Economic reality shifted from tangible resource exchange to abstract systems&mdash;derivatives, credit scores, equity markets&mdash;that have no sensory correlate at all. You cannot smell a bad investment. Each new layer of complexity arrives before we have adapted to the last one, and the intervals keep compressing.</p>
     <p>And we are not going to evolve into this new environment through traditional biological means. In most developed societies, the selection pressures that drove evolution have been largely suspended. Modern institutions&mdash;medicine, agriculture, social safety nets&mdash;mean almost anyone can survive to reproductive age. The engine that tuned our senses over millions of years is effectively idling. The gap between the world we are wired for and the world we actually live in will keep widening. Evolution cannot close it. Only tools can.</p>
     <p>The neuroscientist David Eagleman has given this perceptual confinement a name borrowed from biology: the Umwelt. Every organism lives inside a perceptual bubble defined by its sensory apparatus. The tick&rsquo;s entire universe consists of three inputs&mdash;butyric acid, warmth, and a specific tactile texture. Snakes perceive infrared. Butterflies see ultraviolet. Bats build a spatial world from echolocation. Same planet. Completely different experienced realities. And the critical feature of the Umwelt is that it is invisible from the inside. You do not experience the absence of the wavelengths you cannot see.</p>
+
+    <figure class="infographic">
+      <svg viewBox="0 0 600 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The Human Umwelt: what humans perceive vs what exists">
+
+        <!-- 1. LIGHT (y=40) -->
+        <text x="10" y="35" font-size="13" font-weight="bold" fill="#2c2c2c" font-family="serif">Electromagnetic Spectrum</text>
+        <rect x="10" y="40" width="520" height="24" rx="3" fill="#e8e4d8"/>
+        <rect x="268" y="40" width="2" height="24" rx="1" fill="#c9a84c" opacity="0.7"/>
+        <line x1="269" y1="40" x2="269" y2="30" stroke="#c9a84c" stroke-width="0.5"/>
+        <text x="275" y="33" font-size="8" fill="#c9a84c" font-family="serif">visible light</text>
+        <text x="540" y="56" font-size="12" fill="#c9a84c" font-family="serif">0.0035%</text>
+        <text x="10" y="78" font-size="9" fill="#999" font-family="serif">Radio · Microwave · Infrared · <tspan fill="#c9a84c">[VISIBLE]</tspan> · UV · X-ray · Gamma</text>
+
+        <!-- 2. SOUND (y=130) -->
+        <text x="10" y="125" font-size="13" font-weight="bold" fill="#2c2c2c" font-family="serif">Sound Frequencies</text>
+        <rect x="10" y="130" width="520" height="24" rx="3" fill="#e8e4d8"/>
+        <rect x="130" y="130" width="165" height="24" rx="3" fill="#c9a84c" opacity="0.7"/>
+        <text x="540" y="146" font-size="12" fill="#c9a84c" font-family="serif">~59%</text>
+        <text x="10" y="168" font-size="9" fill="#999" font-family="serif">Infrasound (elephants, earthquakes) · <tspan fill="#c9a84c">[HUMAN RANGE]</tspan> · Ultrasound (bats, dolphins)</text>
+
+        <!-- 3. SMELL (y=220) -->
+        <text x="10" y="215" font-size="13" font-weight="bold" fill="#2c2c2c" font-family="serif">Chemical Detection</text>
+        <rect x="10" y="220" width="520" height="24" rx="3" fill="#e8e4d8"/>
+        <rect x="10" y="220" width="50" height="24" rx="3" fill="#c9a84c" opacity="0.7"/>
+        <text x="540" y="236" font-size="12" fill="#c9a84c" font-family="serif">~10,000 odors</text>
+        <text x="10" y="258" font-size="9" fill="#999" font-family="serif">Dogs: 300M receptors · Humans: 5M · Sensitivity gap: 10,000-100,000x</text>
+
+        <!-- 4. MAGNETIC FIELDS (y=310) -->
+        <text x="10" y="305" font-size="13" font-weight="bold" fill="#2c2c2c" font-family="serif">Magnetic Fields</text>
+        <rect x="10" y="310" width="520" height="24" rx="3" fill="#e8e4d8"/>
+        <text x="200" y="326" font-size="10" font-style="italic" fill="#c9a84c" font-family="serif">0% conscious access</text>
+        <text x="540" y="326" font-size="12" fill="#c9a84c" font-family="serif">0%</text>
+        <text x="10" y="348" font-size="9" fill="#999" font-family="serif">Birds, sea turtles, bees navigate by it · Humans have cryptochrome but no conscious access</text>
+
+        <!-- 5. ELECTRICAL FIELDS (y=400) -->
+        <text x="10" y="395" font-size="13" font-weight="bold" fill="#2c2c2c" font-family="serif">Electrical Fields</text>
+        <rect x="10" y="400" width="520" height="24" rx="3" fill="#e8e4d8"/>
+        <text x="200" y="416" font-size="10" font-style="italic" fill="#c9a84c" font-family="serif">0% conscious access</text>
+        <text x="540" y="416" font-size="12" fill="#c9a84c" font-family="serif">0%</text>
+        <text x="10" y="438" font-size="9" fill="#999" font-family="serif">Sharks detect heartbeats through water · Platypus hunts by electroreception</text>
+
+      </svg>
+      <figcaption>Same planet. Different experienced realities.</figcaption>
+    </figure>
+
     <p>And the confinement extends further than wavelengths. The Earth generates a magnetic field that most animals navigate by&mdash;birds, fish, sea turtles, insects&mdash;registering directional information through biological mechanisms tuned to it over millions of years of evolution. Humans carry cryptochrome, a receptor protein found in the retinas of most magnetically sensitive animals, in our own eyes. Geophysicist Joe Kirschvink designed experiments in which human subjects sat inside a carefully shielded chamber while a rotating magnetic field was applied around them. Their brainwaves showed measurable suppression of alpha wave activity in response to field changes&mdash;the same neural signature that appears when the brain is processing new sensory information. The subjects reported noticing nothing. They were responding to something they had no conscious access to, through an apparatus they did not know they possessed. The Umwelt is not only about what we see. It extends to what moves through us.</p>
     <p>Worth recalling here the Guugu Yimithirr from earlier&mdash;the people who navigate by absolute cardinal direction at all times, including indoors, and whose spatial cognition is measurably different from speakers of relative-direction languages. If their language has trained an uncanny sense of orientation into conscious access, it raises a question the Kirschvink experiment makes harder to dismiss: how many other senses are operating in us right now, registering real signals about the world, but lacking the linguistic or cultural scaffolding to surface into awareness? The cryptochrome receptor is in your eye. The signal is reaching your brain. Some other configuration of language, attention, or training might bring it into the kind of perception you can use. The Umwelt may not be only the boundary of what we have. It may also be the boundary of what we have learned how to notice.</p>
     <p>But the brain, it turns out, does not care what channel the data comes in on. Eagleman and his collaborators developed a vest that converts audio into vibrotactile patterns across the torso, allowing deaf individuals to perceive speech through skin vibration. His company, Neosensory, built wristbands that do the same on a smaller scale. Separately, Paul Bach-y-Rita developed the BrainPort&mdash;a device that places a grid of electrodes on the tongue, converting camera input into electrical pulses. Blind users describe the experience not as tongue stimulation but as vision. A man who had been blind for thirty-three years said, through tears, that he could visually see objects and reach out and grab them. Brain imaging confirmed what his experience reported: the visual cortex&mdash;normally devoted to processing input from the eyes&mdash;activated when stimulation came through the tongue. And when the BrainPort was adapted for balance&mdash;feeding head-orientation data to the tongue grid so that people who had lost their vestibular sense could feel which way was up&mdash;the residual benefits persisted even after the device was removed. The brain did not merely use the prosthetic. It used it as a calibration tool to strengthen its own remaining signals.</p>
